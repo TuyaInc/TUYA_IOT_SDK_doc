@@ -1,0 +1,18 @@
+```uml
+@startuml
+title OSS
+participant Device
+participant tuya_sdk
+participant TuyaCloud
+participant TuyaApp
+
+Device->tuya_sdk:tuya_iot_upload_layout_buffer
+tuya_sdk->TuyaCloud:上报数据到oss
+TuyaCloud-->tuya_sdk:success
+tuya_sdk->TuyaCloud:PUBLISH(Qos0,Msg601)
+tuya_sdk-->tuya_sdk:Delete(Msg)
+TuyaCloud->TuyaApp:PUBLISH(Qos0,Msg601)
+TuyaApp->TuyaCloud:下载地图数据
+TuyaCloud-->TuyaApp:success
+@enduml
+```

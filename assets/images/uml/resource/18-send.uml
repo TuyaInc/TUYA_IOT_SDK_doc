@@ -1,0 +1,33 @@
+```uml
+@startuml
+title device status report
+participant TuyaApp
+participant Device
+participant tuya_sdk
+participant TuyaCloud
+
+Note over tuya_sdk:255.255.255.255:6667
+Note over TuyaApp:用户已打开
+TuyaApp->tuya_sdk:局域网内搜索到设备，建立tcp连接
+tuya_sdk-->TuyaApp:ACK
+Device->tuya_sdk:dev_report_dp_xxx_sync
+tuya_sdk-->tuya_sdk:Store(Msg)
+tuya_sdk->TuyaApp:先走局域网发送
+tuya_sdk->TuyaCloud:PUBLISH(Qos1,Msg)
+TuyaCloud-->TuyaCloud:Store(Msg)
+TuyaCloud->TuyaApp:PUBLISH(Qos1,Msg)
+TuyaCloud-->tuya_sdk:PUBACK
+tuya_sdk-->tuya_sdk:Delete(Msg)
+tuya_sdk->Device:return OPRT_OK
+TuyaApp-->TuyaCloud:PUBACK
+TuyaCloud-->TuyaCloud:Delete(Msg)
+Note over TuyaApp:用户已关闭
+Device->tuya_sdk:dev_report_dp_xxx_sync
+tuya_sdk-->tuya_sdk:Store(Msg)
+tuya_sdk->TuyaCloud:PUBLISH(Qos1,Msg)
+TuyaCloud-->TuyaCloud:Store(Msg)
+TuyaCloud-->tuya_sdk:PUBACK
+tuya_sdk-->tuya_sdk:Delete(Msg)
+tuya_sdk->Device:return OPRT_OK
+@enduml
+```
