@@ -45,3 +45,4 @@
 * [日志管理](./resource/log_manage.md)
 * [其他接口](./resource/public_api.md)
 * [常见问题](./resource/FAQ.md)
+* [常见错误码](./resource/error-code.md)

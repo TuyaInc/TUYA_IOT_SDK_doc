@@ -7,7 +7,7 @@
 /**
  * @Function: tuya_set_storge_path
  * @Description: 设置SDK 存储路径，这个目录必须已经存在，且可读可写
- * @Param: fs_storge_path , 字符串长度最大 ？
+ * @Param: fs_storge_path , 字符串长度小于110字节
  * @Return: 0成功，否则失败
  */
 extern int tuya_set_storge_path(char *fs_storge_path);
@@ -167,7 +167,6 @@ typedef void (*P_SDK_PROCESS_REBOOT)(void);
  */
 typedef int (*P_SDK_PROCESS_UPGRADE)(char *upgrade_file);
 ```
-
 > [!NOTE]
 > 设置回调函数时， 要将所使用的全部回调函数设置完，设置的具体源代码请可以参考发布 SDK最新版本中的《user_main.c》调用实现。
 > 其中wifi设备入网功能和led控制功能是可选的，如果不需要这些功能是不需要注册的。
