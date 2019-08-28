@@ -1,7 +1,7 @@
 # Summary
 
-* [概述](./resource/01-Scope.md)
-* [WiFi单品设备](/README.md)
+* [概述](/README.md)
+* [WiFi单品设备](./resource/01-Scope.md)
     * [SDK目录结构](./resource/SDK_directory.md)
     * [初始化](./resource/03-init.md)
         * [SDK初始化](./resource/04-sdk_init.md)
