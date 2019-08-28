@@ -1,0 +1,46 @@
+```uml
+@startuml
+@startuml
+title sub_device ota simple
+
+participant TuyaApp
+participant sub_device
+participant gateway
+participant tuya_sdk
+participant TuyaCloud
+
+Note over TuyaCloud:用户上传配置固件包
+Note over TuyaApp:用户启动升级
+TuyaApp->tuya_sdk:通知升级
+tuya_sdk->TuyaCloud:获取设备升级信息
+TuyaCloud-->tuya_sdk:有升级任务
+tuya_sdk->gateway:__dev_ug_inform_cb
+gateway-[#FF0000]>tuya_sdk: tuya_iot_upgrade_dev_notify，注册回调
+Note over tuya_sdk:创建升级线程,dp下发通道关闭
+tuya_sdk->TuyaCloud:更新设备升级状态为升级中
+TuyaCloud-->tuya_sdk:success
+loop Downloading
+tuya_sdk->TuyaCloud:Download
+TuyaCloud-->tuya_sdk:
+tuya_sdk->gateway:__get_file_data_cb
+gateway-->tuya_sdk:return OPRT_OK
+Note over gateway:接收保存固件
+end
+Note over tuya_sdk:退出升级线程,dp下发通道打开
+tuya_sdk->gateway:__upgrade_notify_cb通知下载结果
+loop Send to sub_device
+gateway->sub_device:发送固件包
+sub_device-->gateway:ACK
+gateway->tuya_sdk:tuya_iot_dev_upgd_progress_rept
+tuya_sdk-->TuyaCloud:
+TuyaCloud->TuyaApp:推送升级进度
+end
+Note over sub_device:固件包接收完成,安装固件
+sub_device->gateway:上报固件版本号
+gateway->tuya_sdk:tuya_iot_gw_subdevice_update
+tuya_sdk->TuyaCloud:更新设备版本号
+Note over TuyaCloud:校验版本号
+TuyaCloud-->TuyaApp:版本号匹配成功，更新设备升级状态为升级完成，推送升级成功消息
+Note over TuyaApp:升级成功
+@enduml
+```

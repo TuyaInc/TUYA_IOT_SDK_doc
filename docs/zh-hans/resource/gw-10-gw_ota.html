@@ -1,0 +1,1023 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>网关固件升级 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-plantuml/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gw-11-sub_ota.html" />
+    
+    
+    <link rel="prev" href="gw-09-ota.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="01-Scope.html">
+            
+                <a href="01-Scope.html">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    WiFi单品设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="SDK_directory.html">
+            
+                <a href="SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="03-init.html">
+            
+                <a href="03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="04-sdk_init.html">
+            
+                <a href="04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="05-device_init.html">
+            
+                <a href="05-device_init.html">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="06-wifi_active.html">
+            
+                <a href="06-wifi_active.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="07-ap_active.html">
+            
+                <a href="07-ap_active.html">
+            
+                    
+                    AP配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="08-smart_active.html">
+            
+                <a href="08-smart_active.html">
+            
+                    
+                    Smart配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="wifi_api.html">
+            
+                <a href="wifi_api.html">
+            
+                    
+                    公共函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="09-other_active.html">
+            
+                <a href="09-other_active.html">
+            
+                    
+                    其他方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="10-ota.html">
+            
+                <a href="10-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="11-soc_ota.html">
+            
+                <a href="11-soc_ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="16-control.html">
+            
+                <a href="16-control.html">
+            
+                    
+                    功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="17-rev.html">
+            
+                <a href="17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="18-send.html">
+            
+                <a href="18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="19-irobot.html">
+            
+                <a href="19-irobot.html">
+            
+                    
+                    扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="20-media.html">
+            
+                <a href="20-media.html">
+            
+                    
+                    流服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="21-oss.html">
+            
+                <a href="21-oss.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="gw-01-introduct.html">
+            
+                <a href="gw-01-introduct.html">
+            
+                    
+                    网关产品
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="gw-SDK_directory.html">
+            
+                <a href="gw-SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="gw-03-init.html">
+            
+                <a href="gw-03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="gw-04-sdk_init.html">
+            
+                <a href="gw-04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="gw-05-gw_init.html">
+            
+                <a href="gw-05-gw_init.html">
+            
+                    
+                    网关初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="gw-07-gw_active.html">
+            
+                <a href="gw-07-gw_active.html">
+            
+                    
+                    网关配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="gw-08-sub_active.html">
+            
+                <a href="gw-08-sub_active.html">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="gw-09-ota.html">
+            
+                <a href="gw-09-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.5.1" data-path="gw-10-gw_ota.html">
+            
+                <a href="gw-10-gw_ota.html">
+            
+                    
+                    网关固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="gw-11-sub_ota.html">
+            
+                <a href="gw-11-sub_ota.html">
+            
+                    
+                    子设备固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="gw-12-sub_manage.html">
+            
+                <a href="gw-12-sub_manage.html">
+            
+                    
+                    子设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="gw-13-grp_infm.html">
+            
+                <a href="gw-13-grp_infm.html">
+            
+                    
+                    组操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="gw-14-scene_infm.html">
+            
+                <a href="gw-14-scene_infm.html">
+            
+                    
+                    场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="gw-15-heartbeat.html">
+            
+                <a href="gw-15-heartbeat.html">
+            
+                    
+                    在线状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="gw-16-control.html">
+            
+                <a href="gw-16-control.html">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="gw-17-rev.html">
+            
+                <a href="gw-17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="gw-18-send.html">
+            
+                <a href="gw-18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="z-gw-01-introduct.html">
+            
+                <a href="z-gw-01-introduct.html">
+            
+                    
+                    涂鸦Zigbee网关功能快速集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="z-gw-SDK_directory.html">
+            
+                <a href="z-gw-SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="z-gw-func_api.html">
+            
+                <a href="z-gw-func_api.html">
+            
+                    
+                    函数接口说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="z-gw-func_process.html">
+            
+                <a href="z-gw-func_process.html">
+            
+                    
+                    函数调用流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="z-gw-one_click.html">
+            
+                <a href="z-gw-one_click.html">
+            
+                    
+                    一键配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="z-gw-faq.html">
+            
+                <a href="z-gw-faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="log_manage.html">
+            
+                <a href="log_manage.html">
+            
+                    
+                    日志管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="public_api.html">
+            
+                <a href="public_api.html">
+            
+                    
+                    其他接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >网关固件升级</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x7F51;&#x5173;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;"><a name="&#x7F51;&#x5173;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;" class="plugin-anchor" href="#&#x7F51;&#x5173;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x5173;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;</h2>
+<h3 id="&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x56FE;"><a name="&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x56FE;" class="plugin-anchor" href="#&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x56FE;</h3>
+<p>&#x8BF4;&#x660E;&#xFF1A;</p>
+<ol>
+<li>&#x4E0B;&#x56FE;&#x4E2D;&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;&#x4E3A;tuya_sdk&#x4E0A;&#x62A5;&#xFF0C;&#x4E5F;&#x53EF;&#x901A;&#x8FC7;tuya_iot_upgrade_gw_notify&#x914D;&#x7F6E;&#x4E3A;&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;
+<img src="../assets/images/uml/resource/gw-10-gw_ota.png" alt=""></li>
+</ol>
+<h3 id="&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x8BF4;&#x660E;"><a name="&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x8BF4;&#x660E;" class="plugin-anchor" href="#&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x76F8;&#x5173;&#x63A5;&#x53E3;&#x8BF4;&#x660E;</h3>
+<h4 id="gwdevrevupgradeinfocb"><a name="gwdevrevupgradeinfocb" class="plugin-anchor" href="#gwdevrevupgradeinfocb"><i class="fa fa-link" aria-hidden="true"></i></a>__gw_dev_rev_upgrade_info_cb</h4>
+<pre class="language-"><code class="lang-c"><span class="token comment">/***********************************************************
+ * @Function:__gw_dev_rev_upgrade_info_cb
+ * @Desc:   &#x7F51;&#x5173;&#x8BBE;&#x5907;&#x5347;&#x7EA7;&#x5165;&#x53E3;
+ * @Param:  fw,&#x56FA;&#x4EF6;&#x4FE1;&#x606F;&#x7ED3;&#x6784;&#x4F53;
+***********************************************************/</span>
+VOID <span class="token function">__gw_dev_rev_upgrade_info_cb</span><span class="token punctuation">(</span>IN CONST FW_UG_S <span class="token operator">*</span>fw<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token function">PR_DEBUG</span><span class="token punctuation">(</span><span class="token string">&quot;GW Rev Upgrade Info&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    FILE <span class="token operator">*</span>p_upgrade_fd <span class="token operator">=</span> <span class="token function">fopen</span><span class="token punctuation">(</span>SOC_OTA_FILE<span class="token punctuation">,</span> <span class="token string">&quot;w+b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token constant">NULL</span> <span class="token operator">==</span> p_upgrade_fd<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;open upgrade file fail. upgrade fail %s&quot;</span><span class="token punctuation">,</span> SOC_OTA_FILE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token macro property">#<span class="token directive keyword">if</span> 0  </span><span class="token comment">// tuya_sdk&#x4E0A;&#x62A5;&#x8FDB;&#x5EA6;</span>
+    OPERATE_RET op_ret <span class="token operator">=</span> <span class="token function">tuya_iot_upgrade_gw_notify</span><span class="token punctuation">(</span>fw<span class="token punctuation">,</span> __get_file_data_cb<span class="token punctuation">,</span> __upgrade_notify_cb<span class="token punctuation">,</span> p_upgrade_fd<span class="token punctuation">,</span>TRUE<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">else</span>  </span><span class="token comment">// &#x5173;&#x95ED;tuya_sdk&#x8FDB;&#x5EA6;&#x4E0A;&#x62A5;&#xFF0C;&#x7531;&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;</span>
+    OPERATE_RET op_ret <span class="token operator">=</span> <span class="token function">tuya_iot_upgrade_gw_notify</span><span class="token punctuation">(</span>fw<span class="token punctuation">,</span> __get_file_data_cb<span class="token punctuation">,</span> __upgrade_notify_cb<span class="token punctuation">,</span> p_upgrade_fd<span class="token punctuation">,</span>FALSE<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span>    </span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>OPRT_OK <span class="token operator">!=</span> op_ret<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;tuya_iot_upgrade_gw err:%d&quot;</span><span class="token punctuation">,</span>op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="getfiledatacb"><a name="getfiledatacb" class="plugin-anchor" href="#getfiledatacb"><i class="fa fa-link" aria-hidden="true"></i></a>__get_file_data_cb</h4>
+<pre class="language-"><code class="lang-c"><span class="token comment">// &#x56FA;&#x4EF6;&#x4E0B;&#x8F7D;&#x4E2D;&#xFF0C;tuya_sdk&#x901A;&#x77E5;&#x5E94;&#x7528;&#x5C42;&#x5904;&#x7406;&#x4E0B;&#x8F7D;&#x5305;</span>
+STATIC OPERATE_RET <span class="token function">__get_file_data_cb</span><span class="token punctuation">(</span>IN CONST FW_UG_S <span class="token operator">*</span>fw<span class="token punctuation">,</span> IN CONST UINT_T total_len<span class="token punctuation">,</span> IN CONST UINT_T offset<span class="token punctuation">,</span>
+                                      IN CONST BYTE_T <span class="token operator">*</span>data<span class="token punctuation">,</span> IN CONST UINT_T len<span class="token punctuation">,</span> OUT UINT_T <span class="token operator">*</span>remain_len<span class="token punctuation">,</span> IN PVOID_T pri_data<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    FILE <span class="token operator">*</span>p_upgrade_fd <span class="token operator">=</span> <span class="token punctuation">(</span>FILE <span class="token operator">*</span><span class="token punctuation">)</span>pri_data<span class="token punctuation">;</span>
+
+    <span class="token function">fwrite</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> len<span class="token punctuation">,</span> p_upgrade_fd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">*</span>remain_len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> OPRT_OK<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="upgradenotifycb"><a name="upgradenotifycb" class="plugin-anchor" href="#upgradenotifycb"><i class="fa fa-link" aria-hidden="true"></i></a>__upgrade_notify_cb</h4>
+<pre class="language-"><code class="lang-c"><span class="token comment">// &#x56FA;&#x4EF6;&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;tuya_sdk&#x901A;&#x77E5;&#x4E0B;&#x8F7D;&#x7ED3;&#x679C;</span>
+STATIC VOID <span class="token function">__upgrade_notify_cb</span><span class="token punctuation">(</span>IN CONST FW_UG_S <span class="token operator">*</span>fw<span class="token punctuation">,</span> IN CONST INT_T download_result<span class="token punctuation">,</span> IN PVOID_T pri_data<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    FILE <span class="token operator">*</span>p_upgrade_fd <span class="token operator">=</span> <span class="token punctuation">(</span>FILE <span class="token operator">*</span><span class="token punctuation">)</span>pri_data<span class="token punctuation">;</span>
+    <span class="token function">fclose</span><span class="token punctuation">(</span>p_upgrade_fd<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>download_result <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">PR_DEBUG</span><span class="token punctuation">(</span><span class="token string">&quot;Upgrade File Download Success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// UserTODO</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;Upgrade File Download Fail.ret = %d&quot;</span><span class="token punctuation">,</span> download_result<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// UserTODO</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h4 id="tuyaiotupgradegwnotify"><a name="tuyaiotupgradegwnotify" class="plugin-anchor" href="#tuyaiotupgradegwnotify"><i class="fa fa-link" aria-hidden="true"></i></a>tuya_iot_upgrade_gw_notify</h4>
+<pre class="language-"><code class="lang-c"><span class="token comment">/***********************************************************
+ * @Function:tuya_iot_upgrade_gw
+ * @Desc:    &#x6CE8;&#x518C;&#x56DE;&#x8C03;&#xFF0C;&#x542F;&#x52A8;&#x7F51;&#x5173;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x7EBF;&#x7A0B;
+ * @Param:   fw, &#x56FA;&#x4EF6;&#x4FE1;&#x606F;
+ * @Param:   get_file_cb, &#x63A5;&#x6536;&#x56FA;&#x4EF6;&#x5305;&#x56DE;&#x8C03;
+ * @Param:   upgrd_nofity_cb, &#x56FA;&#x4EF6;&#x5305;&#x4E0B;&#x8F7D;&#x7ED3;&#x679C;&#x901A;&#x77E5;&#x56DE;&#x8C03;
+ * @Param:   pri_data, private param of get_file_cb &amp;&amp; upgrd_nofity_cb
+ * @Param:   notify,&#x662F;&#x5426;&#x7531;tuya_sdk&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;
+ * @Param:   download_buf_size, &#x4E0B;&#x8F7D;&#x6700;&#x5927;&#x7F13;&#x5B58;&#xFF0C;&#x5355;&#x4F4D;&#x5B57;&#x8282;
+ * @Return:  TRUE: success  FALSE: fail&#xFF0C;
+***********************************************************/</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> tuya_iot_upgrade_gw(fw, get_file_cb, upgrd_nofity_cb, pri_data) \
+    tuya_iot_upgrade_gw_notify(fw, get_file_cb, upgrd_nofity_cb, pri_data, TRUE, 0)</span>
+OPERATE_RET <span class="token function">tuya_iot_upgrade_gw_notify</span><span class="token punctuation">(</span>IN CONST FW_UG_S <span class="token operator">*</span>fw<span class="token punctuation">,</span>
+                                       IN CONST GET_FILE_DATA_CB get_file_cb<span class="token punctuation">,</span>\
+                                       IN CONST UPGRADE_NOTIFY_CB upgrd_nofity_cb<span class="token punctuation">,</span>\
+                                       IN CONST PVOID_T pri_data<span class="token punctuation">,</span>\
+                                       BOOL_T notify<span class="token punctuation">,</span> UINT_T download_buf_size<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;"><a name="&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;" class="plugin-anchor" href="#&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;</h4>
+<p>&#x5F53;&#x9700;&#x8981;&#x5E94;&#x7528;&#x5C42;&#x63A7;&#x5236;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;&#x4E0A;&#x62A5;&#x65F6;&#xFF0C;&#x8BF7;&#x5148;&#x7528;tuya_iot_upgrade_gw_notify&#x63A5;&#x53E3;&#x5173;&#x95ED;tuya_sdk&#x4E0A;&#x62A5;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;</p>
+<p>&#x5E94;&#x7528;&#x5C42;&#x4E0A;&#x62A5;&#x8FDB;&#x5EA6;&#x63A5;&#x53E3;&#xFF1A;<a href="11-sub_ota.md#tuyaiotdevupgdprogressrept">tuya_iot_dev_upgd_progress_rept</a> </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"><a href="https://github.com/TuyaInc" target="_blank">Tuya Inc</a><sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;"><a href="https://www.tuya.com" target="_blank">www.tuya.com</a></p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Tuya Inc all right reserved</p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">Modified at</span>
+2019-08-28 10:13:38
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gw-09-ota.html" class="navigation navigation-prev " aria-label="Previous page: 固件升级">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gw-11-sub_ota.html" class="navigation navigation-next " aria-label="Next page: 子设备固件升级">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"网关固件升级","level":"1.3.5.1","depth":3,"next":{"title":"子设备固件升级","level":"1.3.5.2","depth":3,"path":"resource/gw-11-sub_ota.md","ref":"./resource/gw-11-sub_ota.md","articles":[]},"previous":{"title":"固件升级","level":"1.3.5","depth":2,"path":"resource/gw-09-ota.md","ref":"./resource/gw-09-ota.md","articles":[{"title":"网关固件升级","level":"1.3.5.1","depth":3,"path":"resource/gw-10-gw_ota.md","ref":"./resource/gw-10-gw_ota.md","articles":[]},{"title":"子设备固件升级","level":"1.3.5.2","depth":3,"path":"resource/gw-11-sub_ota.md","ref":"./resource/gw-11-sub_ota.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gw-10-gw_ota.md","mtime":"2019-08-28T02:13:38.052Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-28T05:26:18.037Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-plantuml/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
