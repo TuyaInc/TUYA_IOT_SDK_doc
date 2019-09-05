@@ -78,6 +78,7 @@ OPERATE_RET hwl_wf_station_disconnect(VOID)
 ```
 
 ### hwl_wf_get_ip
+
 ```c
 /**
  * @Function: hwl_wf_get_ip
@@ -86,6 +87,8 @@ OPERATE_RET hwl_wf_station_disconnect(VOID)
  * @Param: wf: wifi function type
  * @Param: ip: the ip addr info
  * @Return: OPRT_OK: success  Other: fail
+ * @Note:   1.和APP端局域网通信时sdk会调用此接口获取设备ip地址，sdk中实现仅供参考，
+ *            请根据设备系统属性检查下
  */
 OPERATE_RET hwl_wf_get_ip(IN CONST WF_IF_E wf,OUT NW_IP_S *ip)
 {

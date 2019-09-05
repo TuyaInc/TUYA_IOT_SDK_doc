@@ -63,6 +63,7 @@ Note over TuyaApp:升级成功
  *          1. 如果升级的是子设备，dev_id = sub_deviceid;
  *          2. 如果升级的是子设备的MCU, dev_id = NULL;
  * @Param:  fw,固件信息结构体
+ * @Param:  void
 ***********************************************************/
 VOID __dev_ug_inform_cb(IN CONST CHAR_T *dev_id,IN CONST FW_UG_S *fw)
 {
