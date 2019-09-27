@@ -1,27 +1,24 @@
 ### 状态上报
 
-#### dp数据上报(obj类型)
+- [接口说明参考](18-send.md)
 
-![dp](images/dp.png)
+### 代码参考
+
+如下为上报zigbee门磁子设备的功能点
+![16-1](images/16-1.png)
+
+- 先获取此子设备配网时的dev_id, [即tuya_iot_gw_bind_dev_attr接口的传入的id参数](gw-08-sub_active.md#tuyaiotgwbinddevattr)
+
+#### 上报门磁状态(布尔型数据上报)
 
 ```c
-    TY_OBJ_DP_S dp_msg[3];
-    dp_msg[0].dpid = ?; // 如上截图，去对应产品的功能点里获取
-    dp_msg[0].type = PROP_VALUE;
-    dp_msg[0].value.dp_value = ？; 
-    dp_msg[0].time_stamp = 0; // 采用当前时间
-    // 工作状态，如上图
-    dp_msg[1].dpid = 3;
-    dp_msg[1].type = PROP_ENUM;
-    dp_msg[1].value.dp_enum = 1 ; // 制热
-    dp_msg[1].time_stamp = 0;
+    TY_OBJ_DP_S doorcontact_state;
+    doorcontact_state.dpid = 1; 
+    doorcontact_state.type = PROP_BOOL;
+    doorcontact_state.value.dp_bool = TRUE; 
+    doorcontact_state.time_stamp = 0; // 采用当前时间
 
-    dp_msg[2].dpid = ？;
-    dp_msg[2].type = PROP_STR;
-    dp_msg[2].value.dp_str = "Tuya Smart"; // 最大支持长度 ？ 
-    dp_msg[2].time_stamp = 0;
-
-    op_ret =  dev_report_dp_json_async(cid,dp_msg,sizeof(dp_msg)/sizeof(TY_OBJ_DP_S));
+    op_ret =  dev_report_dp_json_async(dev_id,&doorcontact_state,sizeof(doorcontact_state)/sizeof(TY_OBJ_DP_S));
     if (op_ret != OPRT_OK){
         PR_ERR("dev_report_dp_json_async op_ret:%d\n", op_ret);
         return op_ret;
@@ -29,46 +26,47 @@
     PR_NOTICE("dev_report_dp_json_async success");
 ```
 
-#### dev_report_dp_json_async
-```c
-/***********************************************************
-*  Function: dev_report_dp_json_async
-*  Desc:     report dp info a-synced.
-*  Input:    devid: if sub-device, then devid = sub-device_id
-*                   if gateway/soc/mcu, then devid = NULL
-*  Input:    dp_data: dp array header
-*  Input:    cnt    : dp array count
-*  Return:   OPRT_OK: success  Other: fail
-***********************************************************/
-OPERATE_RET dev_report_dp_json_async(IN CONST CHAR_T *dev_id,IN CONST TY_OBJ_DP_S *dp_data,IN CONST UINT_T cnt);
-```
-
-#### dp数据上报(raw类型)
+#### 上报电池电量(数值型数据上报)
 
 ```c
-/***********************************************************
-*  Function: dev_report_dp_raw_sync
-*  Desc:     report dp raw info synced.
-*  Input:    devid: if sub-device, then devid = sub-device_id
-*                   if gateway/soc/mcu, then devid = NULL
-*  Input:    dpid: raw dp id
-*  Input:    data: raw data
-*  Input:    len : len of raw data
-*  Input:    timeout: function blocks until timeout seconds
-*  Return:   OPRT_OK: success  Other: fail
-***********************************************************/
-#define dev_report_dp_raw_sync(dev_id, dpid, data, len, timeout) \
-    dev_report_dp_raw_sync_extend(dev_id, dpid, data, len, timeout, TRUE)
-OPERATE_RET dev_report_dp_raw_sync_extend(IN CONST CHAR_T *dev_id,IN CONST BYTE_T dpid,\
-                                                      IN CONST BYTE_T *data,IN CONST UINT_T len,\
-                                                      IN CONST UINT_T timeout, IN CONST BOOL_T enable_auto_retrans);
-```
+    TY_OBJ_DP_S battery_percentage;
+    battery_percentage.dpid = 2; 
+    battery_percentage.type = PROP_VALUE;
+    // 注意取值要在平台定义的数值范围内，如上图数值范围为0-100
+    battery_percentage.value.dp_value = 80; 
+    battery_percentage.time_stamp = 0; // 采用当前时间
 
-```c
-    BYTE_T dpid = ?; 
-    BYTE_T data[3] = {0xF1,0xF2,0xF3};
-    OPERATE_RET op_ret = dev_report_dp_raw_sync(cid,dpid,data,sizeof(data),5);
-    if(OPRT_OK != op_ret) {
-        PR_ERR("dev_report_dp_json_async op_ret:%d",op_ret);
+    op_ret =  dev_report_dp_json_async(dev_id,&battery_percentage,sizeof(battery_percentage)/sizeof(TY_OBJ_DP_S));
+    if (op_ret != OPRT_OK){
+        PR_ERR("dev_report_dp_json_async op_ret:%d\n", op_ret);
+        return op_ret;
     }
+    PR_NOTICE("dev_report_dp_json_async success");
+```
+
+#### 上报电池电量状态(枚举型数据上报)
+
+- 枚举值low, middle, high
+> [!注意事项]
+> 枚举值从0开始，即low状态上报0，middle状态上报1.....
+
+```c
+typedef enum {
+    STATUS_low = 0,
+    STATUS_middle, 
+    STATUS_high,
+}STATUS_TYPE_E;
+
+    TY_OBJ_DP_S battery_state;
+    battery_state.dpid = 3; 
+    battery_state.type = PROP_ENUM;
+    battery_state.value.dp_enum = STATUS_middle; 
+    battery_state.time_stamp = 0; // 采用当前时间
+
+    op_ret =  dev_report_dp_json_async(dev_id,&battery_state,sizeof(battery_state)/sizeof(TY_OBJ_DP_S));
+    if (op_ret != OPRT_OK){
+        PR_ERR("dev_report_dp_json_async op_ret:%d\n", op_ret);
+        return op_ret;
+    }
+    PR_NOTICE("dev_report_dp_json_async success");
 ```

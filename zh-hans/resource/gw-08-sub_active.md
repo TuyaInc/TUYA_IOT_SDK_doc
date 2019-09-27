@@ -90,7 +90,7 @@ STATIC BOOL_T __gw_permit_add_dev_cb(IN CONST GW_PERMIT_DEV_TP_T tp,IN CONST BOO
  * @Desc:   绑定子设备，应用层主动调用
  * @Param:  tp,子设备类型
  * @Param:  uddd, sub-device detail type
- * @Param:  id,子设备的nodeId，自定义，strlen(id) <= 25 
+ * @Param:  id,子设备的dev_id，自定义，strlen(id) <= 25 
  * @Param:  pk,子设备的产品KEY，从iot.tuya.com创建产品后获得
  * @Param:  ver,子设备的固件版本,格式:xx.xx.xx (0<=x<=9)
  * @Param:  attr,sub-device mcu versions,无mcu时传入NULL

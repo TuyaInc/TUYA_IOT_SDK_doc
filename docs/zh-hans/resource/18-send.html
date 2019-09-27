@@ -761,12 +761,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="FAQ.html">
+        <li class="chapter " data-level="1.7" data-path="error-code.html">
             
-                <a href="FAQ.html">
+                <a href="error-code.html">
             
                     
-                    常见问题
+                    设备端错误码
             
                 </a>
             
@@ -774,12 +774,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="error-code.html">
+        <li class="chapter " data-level="1.8" data-path="FAQ.html">
             
-                <a href="error-code.html">
+                <a href="FAQ.html">
             
                     
-                    常见错误码
+                    常见问题
             
                 </a>
             
@@ -843,7 +843,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="&#x4E0A;&#x62A5;obj&#x6570;&#x636E;"><a name="&#x4E0A;&#x62A5;obj&#x6570;&#x636E;" class="plugin-anchor" href="#&#x4E0A;&#x62A5;obj&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x62A5;obj&#x6570;&#x636E;</h3>
+<h3 id="&#x63A5;&#x53E3;&#x8BF4;&#x660E;"><a name="&#x63A5;&#x53E3;&#x8BF4;&#x660E;" class="plugin-anchor" href="#&#x63A5;&#x53E3;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</h3>
 <h4 id="devreportdpjsonasync"><a name="devreportdpjsonasync" class="plugin-anchor" href="#devreportdpjsonasync"><i class="fa fa-link" aria-hidden="true"></i></a>dev_report_dp_json_async</h4>
 <ol>
 <li>&#x4E3A;&#x5F02;&#x6B65;&#x4E0A;&#x62A5;&#x63A5;&#x53E3;&#xFF0C; PUBLISH(Qos1,Msg);</li>
@@ -880,7 +880,6 @@ OPERATE_RET <span class="token function">dev_report_dp_json_async</span><span cl
 OPERATE_RET <span class="token function">dev_report_dp_stat_sync_extend</span><span class="token punctuation">(</span>IN CONST CHAR_T <span class="token operator">*</span>dev_id<span class="token punctuation">,</span>IN CONST TY_OBJ_DP_S <span class="token operator">*</span>dp_data<span class="token punctuation">,</span>\
                                     IN CONST UINT_T cnt<span class="token punctuation">,</span>IN CONST UINT_T timeout<span class="token punctuation">,</span> IN CONST BOOL_T enable_auto_retrans<span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<h3 id="&#x4E0A;&#x62A5;raw&#x578B;&#x6570;&#x636E;"><a name="&#x4E0A;&#x62A5;raw&#x578B;&#x6570;&#x636E;" class="plugin-anchor" href="#&#x4E0A;&#x62A5;raw&#x578B;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x62A5;raw&#x578B;&#x6570;&#x636E;</h3>
 <h4 id="devreportdprawsync"><a name="devreportdprawsync" class="plugin-anchor" href="#devreportdprawsync"><i class="fa fa-link" aria-hidden="true"></i></a>dev_report_dp_raw_sync</h4>
 <ol>
 <li>&#x4E3A;&#x540C;&#x6B65;&#x4E0A;&#x62A5;&#x63A5;&#x53E3;&#xFF0C; PUBLISH(Qos1,Msg);</li>
@@ -1105,8 +1104,40 @@ OPERATE_RET <span class="token function">tuya_iot_sdk_upload_str</span><span cla
    <span class="token keyword">return</span> value<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
+<h3 id="&#x6570;&#x636E;&#x7EC4;&#x5408;&#x4E0A;&#x62A5;"><a name="&#x6570;&#x636E;&#x7EC4;&#x5408;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#&#x6570;&#x636E;&#x7EC4;&#x5408;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x7EC4;&#x5408;&#x4E0A;&#x62A5;</h3>
+<p>&#x5982;&#x4E0B;&#x4EE5;&#x7EC4;&#x5408;&#x4E0A;&#x62A5;&#x626B;&#x5730;&#x673A;&#x5668;&#x4EBA;&#x8BBE;&#x5907;&#x7684;&#x5269;&#x4F59;&#x7535;&#x91CF;&#x3001;&#x8FB9;&#x5237;&#x5BFF;&#x547D;&#x3001;&#x6EDA;&#x5237;&#x5BFF;&#x547D;&#x3001;&#x6EE4;&#x7F51;&#x5BFF;&#x547D;&#x6570;&#x636E;&#xFF1B;</p>
+<p><img src="images/18-1.png" alt="18-1"></p>
+<p><strong>&#x4EE3;&#x7801;&#x53C2;&#x8003;</strong></p>
+<pre class="language-"><code class="lang-c">    TY_OBJ_DP_S dp_msg<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x5269;&#x4F59;&#x7535;&#x91CF;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span> 
+    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x8FB9;&#x5237;&#x5BFF;&#x547D;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> <span class="token number">99</span><span class="token punctuation">;</span> 
+    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x6EDA;&#x5237;&#x5BFF;&#x547D;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> <span class="token number">90</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment">// &#x6EE4;&#x7F51;&#x5BFF;&#x547D;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    dp_msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    op_ret <span class="token operator">=</span>  <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">,</span>dp_msg<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>dp_msg<span class="token punctuation">)</span><span class="token operator">/</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TY_OBJ_DP_S<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>op_ret <span class="token operator">!=</span> OPRT_OK<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async op_ret:%d\n&quot;</span><span class="token punctuation">,</span> op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> op_ret<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">PR_NOTICE</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 <footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"><a href="https://github.com/TuyaInc" target="_blank">Tuya Inc</a><sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;"><a href="https://www.tuya.com" target="_blank">www.tuya.com</a></p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Tuya Inc all right reserved</p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">Modified at</span>
-2019-08-28 09:48:19
+2019-09-27 11:57:58
 </p></div></div></div><div class="box__issues">
 
 </div></footer>
@@ -1153,7 +1184,7 @@ OPERATE_RET <span class="token function">tuya_iot_sdk_upload_str</span><span cla
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"状态上报","level":"1.2.5.2","depth":3,"next":{"title":"扫地机","level":"1.2.6","depth":2,"path":"resource/19-irobot.md","ref":"./resource/19-irobot.md","articles":[{"title":"流服务","level":"1.2.6.1","depth":3,"path":"resource/20-media.md","ref":"./resource/20-media.md","articles":[]},{"title":"云存储","level":"1.2.6.2","depth":3,"path":"resource/21-oss.md","ref":"./resource/21-oss.md","articles":[]}]},"previous":{"title":"指令下发","level":"1.2.5.1","depth":3,"path":"resource/17-rev.md","ref":"./resource/17-rev.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/18-send.md","mtime":"2019-08-28T01:48:19.341Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-05T12:58:51.242Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"状态上报","level":"1.2.5.2","depth":3,"next":{"title":"扫地机","level":"1.2.6","depth":2,"path":"resource/19-irobot.md","ref":"./resource/19-irobot.md","articles":[{"title":"流服务","level":"1.2.6.1","depth":3,"path":"resource/20-media.md","ref":"./resource/20-media.md","articles":[]},{"title":"云存储","level":"1.2.6.2","depth":3,"path":"resource/21-oss.md","ref":"./resource/21-oss.md","articles":[]}]},"previous":{"title":"指令下发","level":"1.2.5.1","depth":3,"path":"resource/17-rev.md","ref":"./resource/17-rev.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/18-send.md","mtime":"2019-09-27T03:57:58.269Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-27T03:52:23.389Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

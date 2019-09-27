@@ -761,12 +761,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="FAQ.html">
+        <li class="chapter " data-level="1.7" data-path="error-code.html">
             
-                <a href="FAQ.html">
+                <a href="error-code.html">
             
                     
-                    常见问题
+                    设备端错误码
             
                 </a>
             
@@ -774,12 +774,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="error-code.html">
+        <li class="chapter " data-level="1.8" data-path="FAQ.html">
             
-                <a href="error-code.html">
+                <a href="FAQ.html">
             
                     
-                    常见错误码
+                    常见问题
             
                 </a>
             
@@ -833,70 +833,73 @@
                                 <section class="normal markdown-section">
                                 
                                 <h3 id="&#x72B6;&#x6001;&#x4E0A;&#x62A5;"><a name="&#x72B6;&#x6001;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#&#x72B6;&#x6001;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x72B6;&#x6001;&#x4E0A;&#x62A5;</h3>
-<h4 id="dp&#x6570;&#x636E;&#x4E0A;&#x62A5;obj&#x7C7B;&#x578B;"><a name="dp&#x6570;&#x636E;&#x4E0A;&#x62A5;obj&#x7C7B;&#x578B;" class="plugin-anchor" href="#dp&#x6570;&#x636E;&#x4E0A;&#x62A5;obj&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>dp&#x6570;&#x636E;&#x4E0A;&#x62A5;(obj&#x7C7B;&#x578B;)</h4>
-<p><img src="images/dp.png" alt="dp"></p>
-<pre class="language-"><code class="lang-c">    TY_OBJ_DP_S dp_msg<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token operator">?</span><span class="token punctuation">;</span> <span class="token comment">// &#x5982;&#x4E0A;&#x622A;&#x56FE;&#xFF0C;&#x53BB;&#x5BF9;&#x5E94;&#x4EA7;&#x54C1;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x91CC;&#x83B7;&#x53D6;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> &#xFF1F;<span class="token punctuation">;</span> 
-    dp_msg<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x91C7;&#x7528;&#x5F53;&#x524D;&#x65F6;&#x95F4;</span>
-    <span class="token comment">// &#x5DE5;&#x4F5C;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_ENUM<span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_enum <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">;</span> <span class="token comment">// &#x5236;&#x70ED;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<ul>
+<li><a href="18-send.html">&#x63A5;&#x53E3;&#x8BF4;&#x660E;&#x53C2;&#x8003;</a></li>
+</ul>
+<h3 id="&#x4EE3;&#x7801;&#x53C2;&#x8003;"><a name="&#x4EE3;&#x7801;&#x53C2;&#x8003;" class="plugin-anchor" href="#&#x4EE3;&#x7801;&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x53C2;&#x8003;</h3>
+<p>&#x5982;&#x4E0B;&#x4E3A;&#x4E0A;&#x62A5;zigbee&#x95E8;&#x78C1;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x529F;&#x80FD;&#x70B9;
+<img src="images/16-1.png" alt="16-1"></p>
+<ul>
+<li>&#x5148;&#x83B7;&#x53D6;&#x6B64;&#x5B50;&#x8BBE;&#x5907;&#x914D;&#x7F51;&#x65F6;&#x7684;dev_id, <a href="gw-08-sub_active.html#tuyaiotgwbinddevattr">&#x5373;tuya_iot_gw_bind_dev_attr&#x63A5;&#x53E3;&#x7684;&#x4F20;&#x5165;&#x7684;id&#x53C2;&#x6570;</a></li>
+</ul>
+<h4 id="&#x4E0A;&#x62A5;&#x95E8;&#x78C1;&#x72B6;&#x6001;&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><a name="&#x4E0A;&#x62A5;&#x95E8;&#x78C1;&#x72B6;&#x6001;&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#&#x4E0A;&#x62A5;&#x95E8;&#x78C1;&#x72B6;&#x6001;&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x62A5;&#x95E8;&#x78C1;&#x72B6;&#x6001;(&#x5E03;&#x5C14;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;)</h4>
+<pre class="language-"><code class="lang-c">    TY_OBJ_DP_S doorcontact_state<span class="token punctuation">;</span>
+    doorcontact_state<span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> 
+    doorcontact_state<span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_BOOL<span class="token punctuation">;</span>
+    doorcontact_state<span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_bool <span class="token operator">=</span> TRUE<span class="token punctuation">;</span> 
+    doorcontact_state<span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x91C7;&#x7528;&#x5F53;&#x524D;&#x65F6;&#x95F4;</span>
 
-    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dpid <span class="token operator">=</span> &#xFF1F;<span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_STR<span class="token punctuation">;</span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_str <span class="token operator">=</span> <span class="token string">&quot;Tuya Smart&quot;</span><span class="token punctuation">;</span> <span class="token comment">// &#x6700;&#x5927;&#x652F;&#x6301;&#x957F;&#x5EA6; &#xFF1F; </span>
-    dp_msg<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-
-    op_ret <span class="token operator">=</span>  <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span>cid<span class="token punctuation">,</span>dp_msg<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>dp_msg<span class="token punctuation">)</span><span class="token operator">/</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TY_OBJ_DP_S<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    op_ret <span class="token operator">=</span>  <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span>dev_id<span class="token punctuation">,</span><span class="token operator">&amp;</span>doorcontact_state<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>doorcontact_state<span class="token punctuation">)</span><span class="token operator">/</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TY_OBJ_DP_S<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>op_ret <span class="token operator">!=</span> OPRT_OK<span class="token punctuation">)</span><span class="token punctuation">{</span>
         <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async op_ret:%d\n&quot;</span><span class="token punctuation">,</span> op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token keyword">return</span> op_ret<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token function">PR_NOTICE</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<h4 id="devreportdpjsonasync"><a name="devreportdpjsonasync" class="plugin-anchor" href="#devreportdpjsonasync"><i class="fa fa-link" aria-hidden="true"></i></a>dev_report_dp_json_async</h4>
-<pre class="language-"><code class="lang-c"><span class="token comment">/***********************************************************
-*  Function: dev_report_dp_json_async
-*  Desc:     report dp info a-synced.
-*  Input:    devid: if sub-device, then devid = sub-device_id
-*                   if gateway/soc/mcu, then devid = NULL
-*  Input:    dp_data: dp array header
-*  Input:    cnt    : dp array count
-*  Return:   OPRT_OK: success  Other: fail
-***********************************************************/</span>
-OPERATE_RET <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span>IN CONST CHAR_T <span class="token operator">*</span>dev_id<span class="token punctuation">,</span>IN CONST TY_OBJ_DP_S <span class="token operator">*</span>dp_data<span class="token punctuation">,</span>IN CONST UINT_T cnt<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<h4 id="dp&#x6570;&#x636E;&#x4E0A;&#x62A5;raw&#x7C7B;&#x578B;"><a name="dp&#x6570;&#x636E;&#x4E0A;&#x62A5;raw&#x7C7B;&#x578B;" class="plugin-anchor" href="#dp&#x6570;&#x636E;&#x4E0A;&#x62A5;raw&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>dp&#x6570;&#x636E;&#x4E0A;&#x62A5;(raw&#x7C7B;&#x578B;)</h4>
-<pre class="language-"><code class="lang-c"><span class="token comment">/***********************************************************
-*  Function: dev_report_dp_raw_sync
-*  Desc:     report dp raw info synced.
-*  Input:    devid: if sub-device, then devid = sub-device_id
-*                   if gateway/soc/mcu, then devid = NULL
-*  Input:    dpid: raw dp id
-*  Input:    data: raw data
-*  Input:    len : len of raw data
-*  Input:    timeout: function blocks until timeout seconds
-*  Return:   OPRT_OK: success  Other: fail
-***********************************************************/</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> dev_report_dp_raw_sync(dev_id, dpid, data, len, timeout) \
-    dev_report_dp_raw_sync_extend(dev_id, dpid, data, len, timeout, TRUE)</span>
-OPERATE_RET <span class="token function">dev_report_dp_raw_sync_extend</span><span class="token punctuation">(</span>IN CONST CHAR_T <span class="token operator">*</span>dev_id<span class="token punctuation">,</span>IN CONST BYTE_T dpid<span class="token punctuation">,</span>\
-                                                      IN CONST BYTE_T <span class="token operator">*</span>data<span class="token punctuation">,</span>IN CONST UINT_T len<span class="token punctuation">,</span>\
-                                                      IN CONST UINT_T timeout<span class="token punctuation">,</span> IN CONST BOOL_T enable_auto_retrans<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<pre class="language-"><code class="lang-c">    BYTE_T dpid <span class="token operator">=</span> <span class="token operator">?</span><span class="token punctuation">;</span> 
-    BYTE_T data<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0xF1</span><span class="token punctuation">,</span><span class="token number">0xF2</span><span class="token punctuation">,</span><span class="token number">0xF3</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    OPERATE_RET op_ret <span class="token operator">=</span> <span class="token function">dev_report_dp_raw_sync</span><span class="token punctuation">(</span>cid<span class="token punctuation">,</span>dpid<span class="token punctuation">,</span>data<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>OPRT_OK <span class="token operator">!=</span> op_ret<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async op_ret:%d&quot;</span><span class="token punctuation">,</span>op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<h4 id="&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x6570;&#x503C;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><a name="&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x6570;&#x503C;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x6570;&#x503C;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;(&#x6570;&#x503C;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;)</h4>
+<pre class="language-"><code class="lang-c">    TY_OBJ_DP_S battery_percentage<span class="token punctuation">;</span>
+    battery_percentage<span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> 
+    battery_percentage<span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_VALUE<span class="token punctuation">;</span>
+    <span class="token comment">// &#x6CE8;&#x610F;&#x53D6;&#x503C;&#x8981;&#x5728;&#x5E73;&#x53F0;&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x503C;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x5982;&#x4E0A;&#x56FE;&#x6570;&#x503C;&#x8303;&#x56F4;&#x4E3A;0-100</span>
+    battery_percentage<span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_value <span class="token operator">=</span> <span class="token number">80</span><span class="token punctuation">;</span> 
+    battery_percentage<span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x91C7;&#x7528;&#x5F53;&#x524D;&#x65F6;&#x95F4;</span>
+
+    op_ret <span class="token operator">=</span>  <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span>dev_id<span class="token punctuation">,</span><span class="token operator">&amp;</span>battery_percentage<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>battery_percentage<span class="token punctuation">)</span><span class="token operator">/</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TY_OBJ_DP_S<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>op_ret <span class="token operator">!=</span> OPRT_OK<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async op_ret:%d\n&quot;</span><span class="token punctuation">,</span> op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> op_ret<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
+    <span class="token function">PR_NOTICE</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h4 id="&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x72B6;&#x6001;&#x679A;&#x4E3E;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><a name="&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x72B6;&#x6001;&#x679A;&#x4E3E;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x72B6;&#x6001;&#x679A;&#x4E3E;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E0A;&#x62A5;&#x7535;&#x6C60;&#x7535;&#x91CF;&#x72B6;&#x6001;(&#x679A;&#x4E3E;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;)</h4>
+<ul>
+<li>&#x679A;&#x4E3E;&#x503C;low, middle, high<blockquote>
+<p>[!&#x6CE8;&#x610F;&#x4E8B;&#x9879;]
+&#x679A;&#x4E3E;&#x503C;&#x4ECE;0&#x5F00;&#x59CB;&#xFF0C;&#x5373;low&#x72B6;&#x6001;&#x4E0A;&#x62A5;0&#xFF0C;middle&#x72B6;&#x6001;&#x4E0A;&#x62A5;1.....</p>
+</blockquote>
+</li>
+</ul>
+<pre class="language-"><code class="lang-c"><span class="token keyword">typedef</span> <span class="token keyword">enum</span> <span class="token punctuation">{</span>
+    STATUS_low <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    STATUS_middle<span class="token punctuation">,</span> 
+    STATUS_high<span class="token punctuation">,</span>
+<span class="token punctuation">}</span>STATUS_TYPE_E<span class="token punctuation">;</span>
+
+    TY_OBJ_DP_S battery_state<span class="token punctuation">;</span>
+    battery_state<span class="token punctuation">.</span>dpid <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span> 
+    battery_state<span class="token punctuation">.</span>type <span class="token operator">=</span> PROP_ENUM<span class="token punctuation">;</span>
+    battery_state<span class="token punctuation">.</span>value<span class="token punctuation">.</span>dp_enum <span class="token operator">=</span> STATUS_middle<span class="token punctuation">;</span> 
+    battery_state<span class="token punctuation">.</span>time_stamp <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token comment">// &#x91C7;&#x7528;&#x5F53;&#x524D;&#x65F6;&#x95F4;</span>
+
+    op_ret <span class="token operator">=</span>  <span class="token function">dev_report_dp_json_async</span><span class="token punctuation">(</span>dev_id<span class="token punctuation">,</span><span class="token operator">&amp;</span>battery_state<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>battery_state<span class="token punctuation">)</span><span class="token operator">/</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TY_OBJ_DP_S<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>op_ret <span class="token operator">!=</span> OPRT_OK<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token function">PR_ERR</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async op_ret:%d\n&quot;</span><span class="token punctuation">,</span> op_ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> op_ret<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">PR_NOTICE</span><span class="token punctuation">(</span><span class="token string">&quot;dev_report_dp_json_async success&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"><a href="https://github.com/TuyaInc" target="_blank">Tuya Inc</a><sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;"><a href="https://www.tuya.com" target="_blank">www.tuya.com</a></p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Tuya Inc all right reserved</p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">Modified at</span>
-2019-08-28 10:27:10
+2019-09-27 11:50:32
 </p></div></div></div><div class="box__issues">
 
 </div></footer>
@@ -943,7 +946,7 @@ OPERATE_RET <span class="token function">dev_report_dp_raw_sync_extend</span><sp
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"状态上报","level":"1.3.7.2","depth":3,"next":{"title":"涂鸦Zigbee网关功能快速集成","level":"1.4","depth":1,"path":"resource/z-gw-01-introduct.md","ref":"./resource/z-gw-01-introduct.md","articles":[{"title":"SDK目录结构","level":"1.4.1","depth":2,"path":"resource/z-gw-SDK_directory.md","ref":"./resource/z-gw-SDK_directory.md","articles":[]},{"title":"函数接口说明","level":"1.4.2","depth":2,"path":"resource/z-gw-func_api.md","ref":"./resource/z-gw-func_api.md","articles":[]},{"title":"函数调用流程","level":"1.4.3","depth":2,"path":"resource/z-gw-func_process.md","ref":"./resource/z-gw-func_process.md","articles":[]},{"title":"一键配网","level":"1.4.4","depth":2,"path":"resource/z-gw-one_click.md","ref":"./resource/z-gw-one_click.md","articles":[]},{"title":"常见问题","level":"1.4.5","depth":2,"path":"resource/z-gw-faq.md","ref":"./resource/z-gw-faq.md","articles":[]}]},"previous":{"title":"指令下发","level":"1.3.7.1","depth":3,"path":"resource/gw-17-rev.md","ref":"./resource/gw-17-rev.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gw-18-send.md","mtime":"2019-08-28T02:27:10.760Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-05T12:58:51.242Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"状态上报","level":"1.3.7.2","depth":3,"next":{"title":"涂鸦Zigbee网关功能快速集成","level":"1.4","depth":1,"path":"resource/z-gw-01-introduct.md","ref":"./resource/z-gw-01-introduct.md","articles":[{"title":"SDK目录结构","level":"1.4.1","depth":2,"path":"resource/z-gw-SDK_directory.md","ref":"./resource/z-gw-SDK_directory.md","articles":[]},{"title":"函数接口说明","level":"1.4.2","depth":2,"path":"resource/z-gw-func_api.md","ref":"./resource/z-gw-func_api.md","articles":[]},{"title":"函数调用流程","level":"1.4.3","depth":2,"path":"resource/z-gw-func_process.md","ref":"./resource/z-gw-func_process.md","articles":[]},{"title":"一键配网","level":"1.4.4","depth":2,"path":"resource/z-gw-one_click.md","ref":"./resource/z-gw-one_click.md","articles":[]},{"title":"常见问题","level":"1.4.5","depth":2,"path":"resource/z-gw-faq.md","ref":"./resource/z-gw-faq.md","articles":[]}]},"previous":{"title":"指令下发","level":"1.3.7.1","depth":3,"path":"resource/gw-17-rev.md","ref":"./resource/gw-17-rev.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gw-18-send.md","mtime":"2019-09-27T03:50:32.202Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-27T03:52:23.389Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>

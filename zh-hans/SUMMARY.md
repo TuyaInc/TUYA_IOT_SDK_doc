@@ -44,5 +44,5 @@
     * [常见问题](./resource/z-gw-faq.md)
 * [日志管理](./resource/log_manage.md)
 * [其他接口](./resource/public_api.md)
+* [设备端错误码](./resource/error-code.md)
 * [常见问题](./resource/FAQ.md)
-* [常见错误码](./resource/error-code.md)
