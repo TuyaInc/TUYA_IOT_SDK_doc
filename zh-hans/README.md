@@ -1,3 +1,5 @@
+# :smile:
+
 ## SDK适用范围
 
 - 设备需支持 linux 或 Android 系统

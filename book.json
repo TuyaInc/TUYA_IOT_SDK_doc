@@ -10,7 +10,11 @@
     "pageview-count",
     "popup",
     "chapter-fold",
-    "splitter"
+    "splitter",
+    "advanced-emoji",
+    "todo",
+    "back-to-top-button",
+    "copy-code-button"
   ],
   "pluginsConfig": {
     "prism": {
