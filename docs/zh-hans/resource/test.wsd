@@ -1,0 +1,15 @@
+@startuml
+title device ota simple
+participant TuyaApp
+participant Gateway
+participant sub_device
+participant TuyaCloud
+
+Note over TuyaApp:用户创建场景
+TuyaApp->Gateway:下发场景里所有设备动作对应的dp点
+Gateway->sub_device:下发动作给子设备
+sub_device-->Gateway:子设备响应动作指令
+Gateway-->TuyaApp:上报对应dp
+Note over TuyaApp:场景验证完成
+TuyaApp->Gateway:下发sid(场景id) 和 gid
+@enduml
