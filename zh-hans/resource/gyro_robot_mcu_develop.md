@@ -130,9 +130,9 @@ enum enum_point_type
 
 ## 3.4 相关附件
 
-1、公版产品标准DP定义及交互参考：DP定义及交互V1.0.pdf
+1、[公版产品标准DP定义及交互参考](https://github.com/LinusZhao/tuya_gyro_robot_demo/blob/master/mcu_sdk/doc/03-DP%E5%AE%9A%E4%B9%89%E5%8F%8A%E4%BA%A4%E4%BA%92_2019_12_2.xlsx)
 
-2、公版产品标准通讯协议：通信协议V1.4.pdf
+2、参考[公版产品标准通讯协议](https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/tuya-cloud-universal-serial-port-access-protocol)的**3.23扫地机地图数据服务(可选)** 章节
 
 
 
@@ -277,4 +277,4 @@ IOT平台提供日志查询功能，可以查看扫地机MCU与APP间的数据�
 **2、三方语音开通**
 扫地机可以接收Alexa等三方语音的指令，音箱下发的指令码，与DP定义的指令一致，常用的控制功能有开启清扫、结束清扫、回充、寻找机器等。不同音箱支持的指令稍有差异。
 
-三方语音开通请参考：
+三方语音开通请参考：https://tuyainc.github.io/TUYA_IOT_SDK_doc/zh-hans/resource/gyro_voice_open.html
