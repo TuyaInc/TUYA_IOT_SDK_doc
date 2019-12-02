@@ -182,7 +182,7 @@ enum enum_point_type
 /*****************************************************************
  * @Function: app_panel_init
  * @Description: 配置涂鸦智能APP面板显示的地图尺寸和原点位置            
- * @Param: origin, 地图原点位置，0-左上角  1-右上角
+ * @Param: origin, 地图原点位置，0-左上角  1-左下角
  * @Param: map_size, 目前最大支持显示255*255个坐标点
  * @Return: void
  *****************************************************************/
@@ -192,44 +192,41 @@ void app_panel_init(unsigned char origin,unsigned short map_size)
     buffer[0] = origin;
     buffer[1] = map_size >> 8;
     buffer[2] = map_size & 0xFF;
-    mcu_dp_sync_raw_update(DPID_MAP_CONFIG,buffer,sizeof(buffer)); //RAW型数据上报;
     mcu_dp_raw_update(DPID_MAP_CONFIG,buffer,sizeof(buffer)); //RAW型数据上报;
 }
 ```
 
-
-
 **3、地图数据上报**
 
 ```c
-/*****************************************************************************
-函数名称 : stream_file_trans
-功能描述 : 流服务文件发送，此函数调用频率不得＜500ms每次
-输入参数 : id:ID号
-          buffer:发送包的地址
-          buf_len:坐标点个数， 单包最大不得超过170
-返回参数 : 无
-*****************************************************************************/
-unsigned char stream_file_trans(MAP_ID_S id, GYRO_MAP_S *buffer, unsigned short point_num)
+/*****************************************************************
+ * @Function: mcu_map_data_report
+ * @Description: 地图数据上报            
+ * @Param: id, 地图id号，用于标识一次完整的清扫过程
+ * @Param: buffer, 地图坐标点数组
+ * @Param: point_num, 坐标点数量
+ * @Return: void
+ *****************************************************************/
+unsigned char  mcu_map_data_report(MAP_ID_S id, ST_POT *buffer, unsigned short point_num)
 {
-  // #error "这里仅给出示例，请自行完善流服务处理代码,完成后请删除该行"
-  static unsigned int map_offset = 0;
-  static MAP_ID_S last_id = 0;
-  unsigned short this_len = 0;
+    static unsigned int map_offset = 0;
+    static MAP_ID_S last_id = 0;
+    unsigned short this_len = 0;
 
-  if(stop_update_flag == ENABLE)
+    if(stop_update_flag == ENABLE)
+        return SUCCESS;
+
+    if(last_id != id){ // 开始新的清扫，map_id更新
+        map_offset = 0;
+    }
+
+    this_len = sizeof(GYRO_MAP_S) * point_num;
+    stream_trans(id, map_offset, (unsigned char *)buffer, this_len);
+    map_offset += this_len;
+
+    last_id = id;
+
     return SUCCESS;
-
-  if(last_id != id){ // 开始新的清扫，map_id更新
-    map_offset = 0;
-  }
-
-  this_len = sizeof(GYRO_MAP_S) * point_num;
-  stream_trans(id, map_offset, (unsigned char *)buffer, this_len);
-  map_offset += this_len;
-  last_id = id;
-
-  return SUCCESS;
 }
 ```
 
