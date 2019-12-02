@@ -220,7 +220,7 @@ unsigned char  mcu_map_data_report(MAP_ID_S id, ST_POT *buffer, unsigned short p
         map_offset = 0;
     }
 
-    this_len = sizeof(GYRO_MAP_S) * point_num;
+    this_len = sizeof(ST_POT) * point_num;
     stream_trans(id, map_offset, (unsigned char *)buffer, this_len);
     map_offset += this_len;
 

@@ -1,0 +1,2327 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>涂鸦网关通用SDK用户手册 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-plantuml/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1_Gerneral_Link_Module_SDK_zh.html" />
+    
+    
+    <link rel="prev" href="gw-18-send.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-Scope.html">
+            
+                <a href="01-Scope.html">
+            
+                    
+                    WiFi单品设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="SDK_directory.html">
+            
+                <a href="SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="03-init.html">
+            
+                <a href="03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="04-sdk_init.html">
+            
+                <a href="04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="05-device_init.html">
+            
+                <a href="05-device_init.html">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="06-wifi_active.html">
+            
+                <a href="06-wifi_active.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="07-ap_active.html">
+            
+                <a href="07-ap_active.html">
+            
+                    
+                    AP配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="08-smart_active.html">
+            
+                <a href="08-smart_active.html">
+            
+                    
+                    Smart配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="wifi_api.html">
+            
+                <a href="wifi_api.html">
+            
+                    
+                    公共函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="09-other_active.html">
+            
+                <a href="09-other_active.html">
+            
+                    
+                    其他方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="10-ota.html">
+            
+                <a href="10-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="11-soc_ota.html">
+            
+                <a href="11-soc_ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="16-control.html">
+            
+                <a href="16-control.html">
+            
+                    
+                    功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="17-rev.html">
+            
+                <a href="17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="18-send.html">
+            
+                <a href="18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="19-irobot.html">
+            
+                <a href="19-irobot.html">
+            
+                    
+                    扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="20-media.html">
+            
+                <a href="20-media.html">
+            
+                    
+                    流服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="21-oss.html">
+            
+                <a href="21-oss.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="gw-SDK_directory.html">
+            
+                <a href="gw-SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="gw-03-init.html">
+            
+                <a href="gw-03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="gw-04-sdk_init.html">
+            
+                <a href="gw-04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8.2" data-path="gw-05-gw_init.html">
+            
+                <a href="gw-05-gw_init.html">
+            
+                    
+                    网关初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="gw-07-gw_active.html">
+            
+                <a href="gw-07-gw_active.html">
+            
+                    
+                    网关配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="gw-08-sub_active.html">
+            
+                <a href="gw-08-sub_active.html">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="gw-09-ota.html">
+            
+                <a href="gw-09-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.11.1" data-path="gw-10-gw_ota.html">
+            
+                <a href="gw-10-gw_ota.html">
+            
+                    
+                    网关固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11.2" data-path="gw-11-sub_ota.html">
+            
+                <a href="gw-11-sub_ota.html">
+            
+                    
+                    子设备固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="gw-12-sub_manage.html">
+            
+                <a href="gw-12-sub_manage.html">
+            
+                    
+                    子设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.12.1" data-path="gw-13-grp_infm.html">
+            
+                <a href="gw-13-grp_infm.html">
+            
+                    
+                    组操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.2" data-path="gw-14-scene_infm.html">
+            
+                <a href="gw-14-scene_infm.html">
+            
+                    
+                    场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12.3" data-path="gw-15-heartbeat.html">
+            
+                <a href="gw-15-heartbeat.html">
+            
+                    
+                    在线状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="gw-16-control.html">
+            
+                <a href="gw-16-control.html">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.13.1" data-path="gw-17-rev.html">
+            
+                <a href="gw-17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13.2" data-path="gw-18-send.html">
+            
+                <a href="gw-18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="1_Tuya Gateway Common SDK Users Manual_zh.html">
+            
+                <a href="1_Tuya Gateway Common SDK Users Manual_zh.html">
+            
+                    
+                    涂鸦网关通用SDK用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="1_Gerneral_Link_Module_SDK_zh.html">
+            
+                <a href="1_Gerneral_Link_Module_SDK_zh.html">
+            
+                    
+                    通用联网模块SDK用户手册
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="robot_introduction.html">
+            
+                <a href="robot_introduction.html">
+            
+                    
+                    涂鸦扫地机器人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="gyro_introduction.html">
+            
+                <a href="gyro_introduction.html">
+            
+                    
+                    陀螺仪扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="gyro_robot_access_process.html">
+            
+                <a href="gyro_robot_access_process.html">
+            
+                    
+                    对接说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="gyro_robot_mcu_develop.html">
+            
+                <a href="gyro_robot_mcu_develop.html">
+            
+                    
+                    MCU开发说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="gyro_robot_demo.html">
+            
+                <a href="gyro_robot_demo.html">
+            
+                    
+                    演示demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="gyro_voice_open.html">
+            
+                <a href="gyro_voice_open.html">
+            
+                    
+                    三方语音开通流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="laser_introduction.html">
+            
+                <a href="laser_introduction.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="laser_robot_access_process.html">
+            
+                <a href="laser_robot_access_process.html">
+            
+                    
+                    对接说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="laser_robot_develop.html">
+            
+                <a href="laser_robot_develop.html">
+            
+                    
+                    开发说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="laser_robot_demo.html">
+            
+                <a href="laser_robot_demo.html">
+            
+                    
+                    演示demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="public_api.html">
+            
+                <a href="public_api.html">
+            
+                    
+                    其他接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="error-code.html">
+            
+                <a href="error-code.html">
+            
+                    
+                    设备端错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >涂鸦网关通用SDK用户手册</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><ul>
+<li><div><a href="#&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528;-sdk-&#x7528;&#x6237;&#x624B;&#x518C;">&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x7528;&#x6237;&#x624B;&#x518C;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x7248;&#x672C;&#x8BB0;&#x5F55;">&#x7248;&#x672C;&#x8BB0;&#x5F55;  </a><i></i></div></li>
+<li><div><a href="#1-&#x6982;&#x8FF0;">1. &#x6982;&#x8FF0;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#11-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;">1.1. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#111-&#x6269;&#x5C55;-zigbee-&#x5B50;&#x8BBE;&#x5907;">1.1.1. &#x6269;&#x5C55; ZigBee &#x5B50;&#x8BBE;&#x5907;  </a><i></i></div></li>
+<li><div><a href="#112-&#x6269;&#x5C55;&#x975E;-zigbee-&#x5B50;&#x8BBE;&#x5907;">1.1.2. &#x6269;&#x5C55;&#x975E; ZigBee &#x5B50;&#x8BBE;&#x5907;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#12-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;">1.2. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;  </a><i></i></div></li>
+<li><div><a href="#13-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;">1.3. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#2-&#x603B;&#x4F53;&#x7ED3;&#x6784;">2. &#x603B;&#x4F53;&#x7ED3;&#x6784;  </a><i></i></div></li>
+<li><div><a href="#3-&#x524D;&#x63D0;&#x6761;&#x4EF6;">3. &#x524D;&#x63D0;&#x6761;&#x4EF6;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#31-&#x786C;&#x4EF6;&#x8981;&#x6C42;">3.1. &#x786C;&#x4EF6;&#x8981;&#x6C42;  </a><i></i></div></li>
+<li><div><a href="#32-&#x8F6F;&#x4EF6;&#x8981;&#x6C42;">3.2. &#x8F6F;&#x4EF6;&#x8981;&#x6C42;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#4-sdk-&#x8BF4;&#x660E;">4. SDK &#x8BF4;&#x660E;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#41-sdk-&#x83B7;&#x53D6;">4.1. SDK &#x83B7;&#x53D6;  </a><i></i></div></li>
+<li><div><a href="#42-&#x76EE;&#x5F55;&#x7ED3;&#x6784;">4.2. &#x76EE;&#x5F55;&#x7ED3;&#x6784;   </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#5-&#x5F00;&#x53D1;&#x6307;&#x5357;">5. &#x5F00;&#x53D1;&#x6307;&#x5357;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#51-&#x4E3B;&#x7A0B;&#x5E8F;">5.1. &#x4E3B;&#x7A0B;&#x5E8F;  </a><i></i></div></li>
+<li><div><a href="#52-&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;">5.2. &#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#521-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;">5.2.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;  </a><i></i></div></li>
+<li><div><a href="#522-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;">5.2.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;   </a><i></i></div></li>
+<li><div><a href="#523-&#x4F2A;&#x4EE3;&#x7801;">5.2.3. &#x4F2A;&#x4EE3;&#x7801;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#53-&#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;">5.3. &#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#531-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;">5.3.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;  </a><i></i></div></li>
+<li><div><a href="#532-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;">5.3.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;   </a><i></i></div></li>
+<li><div><a href="#533-&#x4F2A;&#x4EE3;&#x7801;">5.3.3. &#x4F2A;&#x4EE3;&#x7801;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#54-&#x72B6;&#x6001;&#x4E0A;&#x62A5;">5.4. &#x72B6;&#x6001;&#x4E0A;&#x62A5;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#541-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;">5.4.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;  </a><i></i></div></li>
+<li><div><a href="#542-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;">5.4.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;  </a><i></i></div></li>
+<li><div><a href="#543-&#x4F2A;&#x4EE3;&#x7801;">5.4.3. &#x4F2A;&#x4EE3;&#x7801;  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#55-&#x547D;&#x4EE4;&#x4E0B;&#x53D1;">5.5. &#x547D;&#x4EE4;&#x4E0B;&#x53D1;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#551-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;">5.5.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;  </a><i></i></div></li>
+<li><div><a href="#552-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;">5.5.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;  </a><i></i></div></li>
+<li><div><a href="#553-&#x4F2A;&#x4EE3;&#x7801;">5.5.3. &#x4F2A;&#x4EE3;&#x7801;  </a><i></i></div></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#6-api-&#x8BE6;&#x89E3;">6. API &#x8BE6;&#x89E3;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#61-&#x516C;&#x5171;&#x63A5;&#x53E3;">6.1. &#x516C;&#x5171;&#x63A5;&#x53E3;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#611-tuyauseriotstart">6.1.1. tuyauseriot_start  </a><i></i></div></li>
+<li><div><a href="#612-tuyauseriotend">6.1.2. tuyauseriot_end  </a><i></i></div></li>
+<li><div><a href="#613-tuyauserdevreportdpjsonasync">6.1.3. tuyauserdevreportdpjsonasync  </a><i></i></div></li>
+<li><div><a href="#614-tuyauserdevreportdprawsync">6.1.4. tuyauserdevreportdprawsync  </a><i></i></div></li>
+<li><div><a href="#615-tuyauseriotgwbinddev">6.1.5. tuyauseriotgwbind_dev  </a><i></i></div></li>
+<li><div><a href="#616-tuyauseriotgwunbinddev">6.1.6. tuyauseriotgwunbind_dev  </a><i></i></div></li>
+<li><div><a href="#617-tuyauseriotfreshdevhb">6.1.7. tuyauseriotfreshdev_hb  </a><i></i></div></li>
+<li><div><a href="#618-tuyauseriotscenelinkageexec">6.1.8. tuyauseriotscenelinkage_exec  </a><i></i></div></li>
+<li><div><a href="#619-tuyauseriotreggwcb">6.1.9. tuyauseriotreggw_cb</a><i></i></div></li>
+<li><div><a href="#6110-tuyauseriotreggwdevcb">6.1.10. tuyauseriotreggwdevcb  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#62-sdk-&#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;">6.2. SDK &#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#621-getuuidauthkeycb">6.2.1. getuuidauthkey_cb  </a><i></i></div></li>
+<li><div><a href="#622-getproductkeycb">6.2.2. getproductkey_cb  </a><i></i></div></li>
+<li><div><a href="#623-devledcontrolcb">6.2.3. devledcontrol_cb  </a><i></i></div></li>
+<li><div><a href="#624-sdkprocessrebootcb">6.2.4. sdkprocessreboot_cb  </a><i></i></div></li>
+<li><div><a href="#625-sdkprocessupgradecb">6.2.5. sdkprocessupgrade_cb  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#63-&#x7F51;&#x5173;&#x56DE;&#x8C03;">6.3. &#x7F51;&#x5173;&#x56DE;&#x8C03;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#631-devobjdpcb">6.3.1. devobjdp_cb  </a><i></i></div></li>
+<li><div><a href="#632-devrawdpcb">6.3.2. devrawdp_cb   </a><i></i></div></li>
+<li><div><a href="#633-devresetcb">6.3.3. devresetcb  </a><i></i></div></li>
+</ul></li>
+<li><div><a href="#64-&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;">6.4. &#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;  </a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#641-gwdevaddcb">6.4.1. gwdevadd_cb  </a><i></i></div></li>
+<li><div><a href="#642-gwdevdelcb">6.4.2. gwdevdel_cb </a><i></i></div></li>
+<li><div><a href="#643-gwdevbindifmcb">6.4.3. gwdevbindifmcb  </a><i></i></div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528;-sdk-&#x7528;&#x6237;&#x624B;&#x518C;"><a name="&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528;-sdk-&#x7528;&#x6237;&#x624B;&#x518C;" class="plugin-anchor" href="#&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528;-sdk-&#x7528;&#x6237;&#x624B;&#x518C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x7528;&#x6237;&#x624B;&#x518C;</h1>
+<h2 id="&#x7248;&#x672C;&#x8BB0;&#x5F55;"><a name="&#x7248;&#x672C;&#x8BB0;&#x5F55;" class="plugin-anchor" href="#&#x7248;&#x672C;&#x8BB0;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7248;&#x672C;&#x8BB0;&#x5F55;</h2>
+<table>
+<thead>
+<tr>
+<th><strong>&#x7248;&#x672C;</strong></th>
+<th><strong>&#x7F16;&#x5199;/&#x4FEE;&#x8BA2;&#x8BF4;&#x660E;</strong></th>
+<th><strong>&#x4FEE;&#x8BA2;&#x4EBA;</strong></th>
+<th><strong>&#x4FEE;&#x8BA2;&#x65E5;&#x671F;</strong></th>
+<th><strong>&#x5907;&#x6CE8;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0.0</td>
+<td>&#x521B;&#x5EFA;&#x6587;&#x6863;</td>
+<td>&#x9A86;&#x4F1F;&#x9F99;</td>
+<td>2019/11/11</td>
+<td></td>
+</tr>
+<tr>
+<td>1.0.1</td>
+<td>20191125&#x5185;&#x90E8;&#x8BA8;&#x8BBA;&#x540E;&#x4FEE;&#x6539;</td>
+<td>&#x9A86;&#x4F1F;&#x9F99;</td>
+<td>2019/11/27</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-&#x6982;&#x8FF0;"><a name="1-&#x6982;&#x8FF0;" class="plugin-anchor" href="#1-&#x6982;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x6982;&#x8FF0;</h2>
+<p>&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x5BF9;&#x5E95;&#x5C42; ZigBee &#x901A;&#x4FE1;&#xFF0C;&#x7F51;&#x5173;&#x548C;&#x6D82;&#x9E26;&#x4E91;&#x901A;&#x4FE1;&#x8FDB;&#x884C;&#x4E86;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x4E00;&#x7CFB;&#x5217;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#x7ED9;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#xFF0C;&#x964D;&#x4F4E;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x5F00;&#x53D1;&#x95E8;&#x69DB;&#x548C;&#x96BE;&#x5EA6;&#xFF0C;&#x8BA9;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E13;&#x6CE8;&#x4E8E;&#x5176;&#x7CFB;&#x7EDF;&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x3002;  </p>
+<p>&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x80FD;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x9700;&#x6C42;&#xFF1A;  </p>
+<ul>
+<li>&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;&#xFF1B;  </li>
+<li>&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;&#xFF1B;  </li>
+<li>&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;&#xFF1B;  </li>
+</ul>
+<h3 id="11-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;"><a name="11-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;" class="plugin-anchor" href="#11-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x5B50;&#x8BBE;&#x5907;</h3>
+<p>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x6269;&#x5C55;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF1A;ZigBee &#x5B50;&#x8BBE;&#x5907;&#x548C;&#x975E; ZigBee &#x5B50;&#x8BBE;&#x5907;&#x3002;  </p>
+<h4 id="111-&#x6269;&#x5C55;-zigbee-&#x5B50;&#x8BBE;&#x5907;"><a name="111-&#x6269;&#x5C55;-zigbee-&#x5B50;&#x8BBE;&#x5907;" class="plugin-anchor" href="#111-&#x6269;&#x5C55;-zigbee-&#x5B50;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. &#x6269;&#x5C55; ZigBee &#x5B50;&#x8BBE;&#x5907;</h4>
+<p>&#x5E02;&#x9762;&#x4E0A;&#x6709;&#x5927;&#x91CF;&#x7684; ZigBee &#x5B50;&#x8BBE;&#x5907;&#xFF0C;&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x65E0;&#x6CD5;&#x517C;&#x5BB9;&#x6240;&#x6709;&#x5382;&#x5546;&#x7684; ZigBee &#x5B50;&#x8BBE;&#x5907;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#xFF0C;&#x8BA9;&#x672A;&#x88AB;&#x517C;&#x5BB9;&#x7684; ZigBee &#x5B50;&#x8BBE;&#x5907;&#x80FD;&#x591F;&#x63A5;&#x5165;&#x6D82;&#x9E26;&#x4E91;&#x3002;  </p>
+<h4 id="112-&#x6269;&#x5C55;&#x975E;-zigbee-&#x5B50;&#x8BBE;&#x5907;"><a name="112-&#x6269;&#x5C55;&#x975E;-zigbee-&#x5B50;&#x8BBE;&#x5907;" class="plugin-anchor" href="#112-&#x6269;&#x5C55;&#x975E;-zigbee-&#x5B50;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. &#x6269;&#x5C55;&#x975E; ZigBee &#x5B50;&#x8BBE;&#x5907;</h4>
+<p>&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x591A;&#x534F;&#x8BAE;&#x7F51;&#x5173;&#xFF0C;&#x5982; ZigBee + 443, ZigBee + BLE &#x7B49;&#x591A;&#x534F;&#x8BAE;&#x7EC4;&#x5408;&#x3002;&#x628A;&#x6D82;&#x9E26; ZigBee &#x6A21;&#x5757;&#x63A5;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x786C;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x901A;&#x8FC7;&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x63D0;&#x4F9B;&#x7684;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#xFF0C;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x5730;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x5B50;&#x8BBE;&#x5907;&#x63A5;&#x5165;&#x5230;&#x6D82;&#x9E26;&#x4E91;&#x3002;&#x80FD;&#x591F;&#x5FEB;&#x901F;&#x5F00;&#x53D1;&#x4E00;&#x6B3E;&#x65E2;&#x80FD;&#x7BA1;&#x7406;&#x6D82;&#x9E26;&#x751F;&#x6001;&#x7684; ZigBee &#x5B50;&#x8BBE;&#x5907;&#xFF0C;&#x53C8;&#x80FD;&#x7BA1;&#x7406;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x751F;&#x6001;&#x7684;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x591A;&#x534F;&#x8BAE;&#x7F51;&#x5173;&#x3002;  </p>
+<h3 id="12-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;"><a name="12-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;" class="plugin-anchor" href="#12-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;</h3>
+<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x7684;&#x7F51;&#x5173;&#x8FDE;&#x63A5;&#x7740;&#x5916;&#x8BBE;&#xFF0C;&#x5E76;&#x4E14;&#x5E0C;&#x671B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; APP &#x63A7;&#x5236;&#x7F51;&#x5173;&#x7684;&#x5916;&#x8BBE;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#x6765;&#x5B9E;&#x73B0;&#x3002;    </p>
+<h3 id="13-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;"><a name="13-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;" class="plugin-anchor" href="#13-&#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x6269;&#x5C55;&#x7F51;&#x5173;&#x7684;&#x4E91;&#x63A5;&#x5165;</h3>
+<p>&#x5B50;&#x8BBE;&#x5907;&#x65E2;&#x5165;&#x6D82;&#x9E26;&#x4E91;&#xFF0C;&#x540C;&#x65F6;&#x53C8;&#x5165;&#x5176;&#x4ED6;&#x4E91;&#xFF0C;&#x5B9E;&#x73B0;&#x53CC;&#x4E91;&#x63A7;&#x5236;&#x3002;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x5F00;&#x53D1;&#xFF0C;&#x5B9E;&#x73B0;&#x5176;&#x4ED6;&#x4E91;&#x7684;&#x63A5;&#x5165;&#x4E1A;&#x52A1;&#x3002;  </p>
+<h2 id="2-&#x603B;&#x4F53;&#x7ED3;&#x6784;"><a name="2-&#x603B;&#x4F53;&#x7ED3;&#x6784;" class="plugin-anchor" href="#2-&#x603B;&#x4F53;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x603B;&#x4F53;&#x7ED3;&#x6784;</h2>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/ff5cb08d-1d2a-4b13-b32b-32904b151ba6.jpg" alt=""></p>
+<p>&#x6839;&#x636E;&#x603B;&#x4F53;&#x7ED3;&#x6784;&#xFF0C;&#x7528;&#x6237;&#x53EA;&#x9700;&#x8981;&#x5B8C;&#x6210;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x548C;&#x6D82;&#x9E26; SDK &#x4E4B;&#x95F4;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#xFF0C;&#x7F51;&#x5173;&#x5C31;&#x5177;&#x5907;&#x4E86;&#x4EE5;&#x4E0A;&#x7684;&#x6269;&#x5C55;&#x529F;&#x80FD;&#x3002;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4F5C;&#x4E3A;&#x5BBF;&#x4E3B;&#x7A0B;&#x5E8F;&#xFF0C;&#x8D1F;&#x8D23; SDK &#x7684;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x4E14;&#x4F7F;&#x7528; SDK &#x7684;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#x5B8C;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x5F00;&#x53D1;&#x3002;  </p>
+<h2 id="3-&#x524D;&#x63D0;&#x6761;&#x4EF6;"><a name="3-&#x524D;&#x63D0;&#x6761;&#x4EF6;" class="plugin-anchor" href="#3-&#x524D;&#x63D0;&#x6761;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x524D;&#x63D0;&#x6761;&#x4EF6;</h2>
+<p>&#x5728;&#x5F00;&#x53D1;&#x4E4B;&#x524D;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x9996;&#x5148;&#x6CE8;&#x518C;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x8D26;&#x53F7;&#xFF0C;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#x7684;&#x5FC5;&#x8981;&#x4FE1;&#x606F;&#xFF0C;&#x5305;&#x542B;&#x4EA7;&#x54C1; ID&#x3001;&#x6388;&#x6743;&#x7801;&#x7B49;&#x3002;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x6307;&#x5BFC;&#xFF0C;&#x8BF7;&#x53C2;&#x89C1;<a href="https://docs.tuya.com/zh/iot" target="_blank">&#x6D82;&#x9E26;&#x6587;&#x6863;&#x4E2D;&#x5FC3;</a>&#x3002;  </p>
+<h3 id="31-&#x786C;&#x4EF6;&#x8981;&#x6C42;"><a name="31-&#x786C;&#x4EF6;&#x8981;&#x6C42;" class="plugin-anchor" href="#31-&#x786C;&#x4EF6;&#x8981;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x786C;&#x4EF6;&#x8981;&#x6C42;</h3>
+<ul>
+<li>Flash &gt;= 5 MB&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x53EF;&#x8BFB;&#x5199;&#x5206;&#x533A;    </li>
+<li>RAM &gt;= 8 MB  </li>
+</ul>
+<h3 id="32-&#x8F6F;&#x4EF6;&#x8981;&#x6C42;"><a name="32-&#x8F6F;&#x4EF6;&#x8981;&#x6C42;" class="plugin-anchor" href="#32-&#x8F6F;&#x4EF6;&#x8981;&#x6C42;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. &#x8F6F;&#x4EF6;&#x8981;&#x6C42;</h3>
+<ul>
+<li>&#x652F;&#x6301; Linux &#x6216; Android &#x7CFB;&#x7EDF;  </li>
+<li>&#x652F;&#x6301; TCP/IP &#x534F;&#x8BAE;&#x6808;  </li>
+</ul>
+<h2 id="4-sdk-&#x8BF4;&#x660E;"><a name="4-sdk-&#x8BF4;&#x660E;" class="plugin-anchor" href="#4-sdk-&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>4. SDK &#x8BF4;&#x660E;</h2>
+<h3 id="41-sdk-&#x83B7;&#x53D6;"><a name="41-sdk-&#x83B7;&#x53D6;" class="plugin-anchor" href="#41-sdk-&#x83B7;&#x53D6;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1. SDK &#x83B7;&#x53D6;</h3>
+<p>&#x6D82;&#x9E26;&#x7F51;&#x5173;&#x901A;&#x7528; SDK &#x662F;&#x4EE5; C &#x8BED;&#x8A00;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;(.so)&#x7684;&#x5F62;&#x5F0F;&#x63D0;&#x4F9B;&#x7ED9;&#x7528;&#x6237;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x76F8;&#x5E94;&#x7684;&#x7F16;&#x8BD1;&#x5DE5;&#x5177;&#x94FE;&#x6765;&#x6253;&#x5305; SDK&#x3002;  </p>
+<h3 id="42-&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><a name="42-&#x76EE;&#x5F55;&#x7ED3;&#x6784;" class="plugin-anchor" href="#42-&#x76EE;&#x5F55;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2. &#x76EE;&#x5F55;&#x7ED3;&#x6784;</h3>
+<pre class="language-"><code>&#x251C;&#x2500;&#x2500; bin
+&#x2502;   &#x2514;&#x2500;&#x2500; tuya_iot_app
+&#x251C;&#x2500;&#x2500; include
+&#x2502;   &#x251C;&#x2500;&#x2500; tuya_iot_gw_comm_api.h
+&#x2502;   &#x2514;&#x2500;&#x2500; tuya_iot_gw_comm_type.h
+&#x251C;&#x2500;&#x2500; lib
+&#x2502;   &#x2514;&#x2500;&#x2500; libsdk_support.so
+&#x251C;&#x2500;&#x2500; Makefile
+&#x2514;&#x2500;&#x2500; src
+    &#x2514;&#x2500;&#x2500; user_main.c
+</code></pre><table>
+<thead>
+<tr>
+<th>&#x6587;&#x4EF6;&#x540D;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bin/tuya_iot_app</td>
+<td>&#x6D82;&#x9E26;&#x9884;&#x7F16;&#x8BD1;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#xFF0C;&#x4E3A;&#x6D82;&#x9E26; SDK &#x8FDB;&#x7A0B;&#xFF0C;&#x5728;&#x7528;&#x6237;&#x8C03;&#x7528;&#x521D;&#x59CB;&#x5316;&#x63A5;&#x53E3;&#x65F6;&#x542F;&#x52A8;&#x3002;</td>
+</tr>
+<tr>
+<td>include/tuya_iot_gw_comm_api.h</td>
+<td>&#x5B9A;&#x4E49; SDK &#x66B4;&#x9732;&#x7684;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#x3002;</td>
+</tr>
+<tr>
+<td>include/tuya_iot_gw_comm_type.h</td>
+<td>&#x5B9A;&#x4E49;&#x8C03;&#x7528; SDK &#x66B4;&#x9732;&#x7684;&#x51FD;&#x6570;&#x63A5;&#x53E3;&#x9700;&#x8981;&#x7528;&#x5230;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</td>
+</tr>
+<tr>
+<td>lib/libsdk_support.so</td>
+<td>SDK &#x52A8;&#x6001;&#x94FE;&#x63A5;&#x5E93;&#x3002;</td>
+</tr>
+<tr>
+<td>Makefile</td>
+<td>&#x7F16;&#x8BD1;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x7684;&#x811A;&#x672C;&#x3002;</td>
+</tr>
+<tr>
+<td>src/user_main.c</td>
+<td>&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#xFF0C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#x4F7F;&#x7528;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-&#x5F00;&#x53D1;&#x6307;&#x5357;"><a name="5-&#x5F00;&#x53D1;&#x6307;&#x5357;" class="plugin-anchor" href="#5-&#x5F00;&#x53D1;&#x6307;&#x5357;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x5F00;&#x53D1;&#x6307;&#x5357;</h2>
+<h3 id="51-&#x4E3B;&#x7A0B;&#x5E8F;"><a name="51-&#x4E3B;&#x7A0B;&#x5E8F;" class="plugin-anchor" href="#51-&#x4E3B;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1. &#x4E3B;&#x7A0B;&#x5E8F;</h3>
+<p>&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x7A0B;&#x5E8F;&#xFF08;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#xFF09;&#x4F5C;&#x4E3A;&#x5BBF;&#x4E3B;&#x8FDB;&#x7A0B;&#x8FD0;&#x884C;&#xFF0C;&#x9700;&#x8981;&#x8C03;&#x7528; SDK &#x63A5;&#x53E3;&#x542F;&#x52A8;&#x6D82;&#x9E26; SDK &#x8FDB;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14;&#x6CE8;&#x518C;&#x76F8;&#x5173;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x4E3B;&#x7A0B;&#x5E8F;&#x6D41;&#x7A0B;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;  </p>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/f8d8c8dd-70d6-447a-b1d1-49c564b02b55.jpg" alt=""></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x56FE;&#x4E2D; <code>tuya_user_iot_reg_xxx_cb</code> &#x7684;&#x201C;xxx&#x201D;&#x8868;&#x793A;&#x5177;&#x4F53;&#x7684;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x5982;&#x7F51;&#x5173;&#x56DE;&#x8C03;&#x3001;&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;&#x7B49;&#x3002; </p>
+<h3 id="52-&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;"><a name="52-&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;" class="plugin-anchor" href="#52-&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2. &#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;</h3>
+<h4 id="521-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><a name="521-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;" class="plugin-anchor" href="#521-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;</h4>
+<p>&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;&#x4E3B;&#x8981;&#x7531;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5B8C;&#x6210;&#x3002;  </p>
+<ul>
+<li>&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;&#x5B50;&#x8BBE;&#x5907;&#x4EA7;&#x54C1;&#xFF0C;&#x83B7;&#x53D6; PID&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x6CE8;&#x518C;&#x5E76;&#x5B9E;&#x73B0; <code>gw_dev_add_cb</code> &#x548C; <code>gw_dev_bind_ifm_cb</code> &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x5B9E;&#x73B0;&#x4E0E;&#x5B50;&#x8BBE;&#x5907;&#x901A;&#x8BAF;&#x529F;&#x80FD;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;&#x53D1;&#x8D77;&#x5165;&#x7F51;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x8C03;&#x7528; <code>tuya_user_iot_gw_bind_dev</code> &#x63A5;&#x53E3;&#x5B8C;&#x6210;&#x7ED1;&#x5B9A;&#x3002;  </li>
+</ul>
+<h4 id="522-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><a name="522-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;" class="plugin-anchor" href="#522-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;</h4>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/cb4f9621-27a9-4f19-8a04-41155c8fd08a.jpg" alt=""></p>
+<h4 id="523-&#x4F2A;&#x4EE3;&#x7801;"><a name="523-&#x4F2A;&#x4EE3;&#x7801;" class="plugin-anchor" href="#523-&#x4F2A;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2.3. &#x4F2A;&#x4EE3;&#x7801;</h4>
+<pre class="language-"><code>/**
+ * &#x5047;&#x8BBE;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x5904;&#x7406;
+ */
+int join_msg_recv(dev_info_s *info)
+{
+    int ret = 0;
+    uint_t uddd = 0x83000101;
+
+    ret = tuya_user_iot_gw_bind_dev(uddd, info-&gt;dev_id, info-&gt;pid, info-&gt;ver);
+    if (ret != 0) {
+        /* &#x7ED1;&#x5B9A;&#x5931;&#x8D25;, USER TODO */
+    } else {
+        /* &#x7ED1;&#x5B9A;&#x6210;&#x529F;, USER TODO */
+    }
+}
+
+void gw_dev_add_handle(int permit, uint_t timeout)
+{
+    /* TODO: &#x5141;&#x8BB8;&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51; */
+}
+
+void gw_dev_bind_ifm_handle(const char *dev_id, int result)
+{
+    /* &#x7ED1;&#x5B9A;&#x6210;&#x529F;, USER TODO */
+}
+
+int main(int argc, char **argv)
+{
+    ...
+    ty_gw_dev_cbs gw_dev_cbs = {
+        .gw_dev_add_cb = gw_dev_add_handle,
+        .gw_dev_del_cb = gw_dev_del_handle,
+        .gw_dev_bind_ifm_cb = gw_dev_bind_ifm_handle
+    };
+    tuya_user_iot_reg_gw_dev_cb(&amp;gw_dev_cbs);
+    ...
+}
+</code></pre><h3 id="53-&#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;"><a name="53-&#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;" class="plugin-anchor" href="#53-&#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3. &#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x4FDD;&#x6D3B;</h3>
+<h4 id="531-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><a name="531-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;" class="plugin-anchor" href="#531-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;</h4>
+<p>&#x5237;&#x65B0;&#x5B50;&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x4E3B;&#x8981;&#x7531;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5B8C;&#x6210;&#x3002;  </p>
+<ul>
+<li>&#x7F51;&#x5173;&#x8981;&#x5148;&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;&#x3002;  </li>
+<li>&#x5B50;&#x8BBE;&#x5907;&#x5B9A;&#x65F6;&#x5411;&#x7F51;&#x5173;&#x53D1;&#x9001;&#x5FC3;&#x8DF3;&#x6765;&#x4FDD;&#x6301;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x5FC3;&#x8DF3;&#xFF0C;&#x8C03;&#x7528; <code>tuya_user_iot_fresh_dev_hb</code> &#x63A5;&#x53E3;&#x5237;&#x65B0;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x3002;  </li>
+</ul>
+<h4 id="532-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><a name="532-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;" class="plugin-anchor" href="#532-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;</h4>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/80d9fb5f-adea-48f0-ad0c-653022dac9c9.jpg" alt=""></p>
+<h4 id="533-&#x4F2A;&#x4EE3;&#x7801;"><a name="533-&#x4F2A;&#x4EE3;&#x7801;" class="plugin-anchor" href="#533-&#x4F2A;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3.3. &#x4F2A;&#x4EE3;&#x7801;</h4>
+<pre class="language-"><code>/**
+ * &#x5047;&#x8BBE;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;&#x5FC3;&#x8DF3;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x5904;&#x7406;
+ */
+int keepalive_msg_recv(const char *dev_id)
+{
+    int ret = 0;
+
+    ret = tuya_user_iot_fresh_dev_hb(dev_id);
+    if (ret != 0) {
+        /* &#x5FC3;&#x8DF3;&#x5237;&#x65B0;&#x5931;&#x8D25;, USER TODO */
+    } else {
+        /* &#x5FC3;&#x8DF3;&#x5237;&#x65B0;&#x6210;&#x529F;, USER TODO */
+    }
+}
+</code></pre><h3 id="54-&#x72B6;&#x6001;&#x4E0A;&#x62A5;"><a name="54-&#x72B6;&#x6001;&#x4E0A;&#x62A5;" class="plugin-anchor" href="#54-&#x72B6;&#x6001;&#x4E0A;&#x62A5;"><i class="fa fa-link" aria-hidden="true"></i></a>5.4. &#x72B6;&#x6001;&#x4E0A;&#x62A5;</h3>
+<h4 id="541-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><a name="541-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;" class="plugin-anchor" href="#541-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>5.4.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;</h4>
+<p>&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x540E;&#xFF0C;&#x8981;&#x540C;&#x6B65;&#x5230;&#x6D82;&#x9E26;&#x4E91;&#xFF0C;&#x4E3B;&#x8981;&#x7531;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5B8C;&#x6210;&#x3002;  </p>
+<ul>
+<li>&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x53D8;&#x5316;&#xFF0C;&#x628A;&#x65B0;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x5230;&#x7F51;&#x5173;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x540E;&#xFF0C;&#x8C03;&#x7528; <code>tuya_user_dev_report_dp_json_async</code> &#x6216; <code>tuya_user_dev_report_dp_raw_sync</code> &#x628A;&#x65B0;&#x72B6;&#x6001;&#x540C;&#x6B65;&#x5230;&#x6D82;&#x9E26;&#x4E91;&#x3002;  </li>
+</ul>
+<h4 id="542-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><a name="542-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;" class="plugin-anchor" href="#542-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.4.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;</h4>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/387aa14b-7861-4883-a05f-ae45252fce7d.jpg" alt=""></p>
+<h4 id="543-&#x4F2A;&#x4EE3;&#x7801;"><a name="543-&#x4F2A;&#x4EE3;&#x7801;" class="plugin-anchor" href="#543-&#x4F2A;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>5.4.3. &#x4F2A;&#x4EE3;&#x7801;</h4>
+<pre class="language-"><code>/**
+ * &#x5047;&#x8BBE;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#xFF0C;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x5904;&#x7406;
+ */
+int report_msg_recv(const char *dev_id, int val)
+{
+    /* &#x8FD9;&#x91CC;&#x4EE5;&#x4E00;&#x8DEF;&#x5F00;&#x5173;&#x4E3A;&#x4F8B;&#xFF0C;&#x6784;&#x9020;&#x529F;&#x80FD;&#x70B9;&#x7ED3;&#x6784;&#x4F53;&#x4E0A;&#x62A5;&#x5230;&#x6D82;&#x9E26;&#x4E91; */
+    uint_t dps_cnt = 1;
+    ty_obj_dp_s *dps = NULL;
+
+    dps = (ty_obj_dp_s *)malloc(dps_cnt * sizeof(ty_obj_dp_s));
+    if (dps == NULL) {
+        return -1;
+    }
+
+    dps[0].dpid = 1;
+    dps[0].type = PROP_BOOL;
+    dps[0].value.dp_bool = val;
+
+    ret = tuya_user_dev_report_dp_json_async(dev_id, dps_cnt, dps);
+    if (ret != 0) {
+        /* &#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x5931;&#x8D25;, USER TODO */
+    } else {
+        /* &#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x6210;&#x529F;, USER TODO */
+    }
+}
+</code></pre><h3 id="55-&#x547D;&#x4EE4;&#x4E0B;&#x53D1;"><a name="55-&#x547D;&#x4EE4;&#x4E0B;&#x53D1;" class="plugin-anchor" href="#55-&#x547D;&#x4EE4;&#x4E0B;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>5.5. &#x547D;&#x4EE4;&#x4E0B;&#x53D1;</h3>
+<h4 id="551-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><a name="551-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;" class="plugin-anchor" href="#551-&#x6B65;&#x9AA4;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>5.5.1. &#x6B65;&#x9AA4;&#x8BF4;&#x660E;</h4>
+<p>&#x901A;&#x8FC7; APP &#x63A7;&#x5236;&#x8BBE;&#x5907;&#xFF0C;&#x4E3B;&#x8981;&#x7531;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#x5B8C;&#x6210;&#x3002;  </p>
+<ul>
+<li>&#x8BBE;&#x5907;&#x5FC5;&#x987B;&#x5904;&#x4E8E;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x6CE8;&#x518C;&#x5E76;&#x5B9E;&#x73B0; <code>dev_obj_dp_cb</code> &#x6216; <code>dev_raw_dp_cb</code> &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;  </li>
+<li>&#x5728; APP &#x4E0A;&#x63A7;&#x5236;&#x8BBE;&#x5907;&#xFF0C;<code>dev_obj_dp_cb</code> &#x6216; <code>dev_raw_dp_cb</code> &#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x56DE;&#x8C03;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#x5B8C;&#x6210;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x5904;&#x7406;&#x3002;  </li>
+<li>&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x6536;&#x5230;&#x547D;&#x4EE4;&#x540E;&#xFF0C;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5176;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x8981;&#x628A;&#x65B0;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x5230;&#x7F51;&#x5173;&#x3002;  </li>
+<li>&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x540E;&#xFF0C;&#x8C03;&#x7528; <code>tuya_user_dev_report_dp_json_async</code> &#x6216; <code>tuya_user_dev_report_dp_raw_sync</code> &#x628A;&#x65B0;&#x72B6;&#x6001;&#x540C;&#x6B65;&#x5230;&#x6D82;&#x9E26;&#x4E91;&#x3002;    </li>
+</ul>
+<h4 id="552-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><a name="552-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;" class="plugin-anchor" href="#552-&#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>5.5.2. &#x6D41;&#x7A0B;&#x4EA4;&#x4E92;&#x56FE;</h4>
+<p><img src="https://airtake-public-data.oss-cn-hangzhou.aliyuncs.com/fe-static/tuya-docs/81dd0911-e39b-4685-92d4-411112bacf38.jpg" alt=""></p>
+<h4 id="553-&#x4F2A;&#x4EE3;&#x7801;"><a name="553-&#x4F2A;&#x4EE3;&#x7801;" class="plugin-anchor" href="#553-&#x4F2A;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>5.5.3. &#x4F2A;&#x4EE3;&#x7801;</h4>
+<pre class="language-"><code>/**
+ * &#x5047;&#x8BBE;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;/&#x7F51;&#x5173;&#x5916;&#x8BBE;&#x529F;&#x80FD;&#x70B9;&#x72B6;&#x6001;&#x4E0A;&#x62A5;&#xFF0C;&#x5728;&#x6B64;&#x51FD;&#x6570;&#x5904;&#x7406;
+ */
+int report_msg_recv(const char *dev_id, int val)
+{
+    /* &#x8FD9;&#x91CC;&#x4EE5;&#x4E00;&#x8DEF;&#x5F00;&#x5173;&#x4E3A;&#x4F8B;&#xFF0C;&#x6784;&#x9020;&#x529F;&#x80FD;&#x70B9;&#x7ED3;&#x6784;&#x4F53;&#x4E0A;&#x62A5;&#x5230;&#x6D82;&#x9E26;&#x4E91; */
+    uint_t dps_cnt = 1;
+    ty_obj_dp_s *dps = NULL;
+
+    dps = (ty_obj_dp_s *)malloc(dps_cnt * sizeof(ty_obj_dp_s));
+    if (dps == NULL) {
+        return -1;
+    }
+
+    dps[0].dpid = 1;
+    dps[0].type = PROP_BOOL;
+    dps[0].value.dp_bool = val;
+
+    ret = tuya_user_dev_report_dp_json_async(dev_id, dps_cnt, dps);
+    if (ret != 0) {
+        /* &#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x5931;&#x8D25;, USER TODO */
+    } else {
+        /* &#x72B6;&#x6001;&#x4E0A;&#x62A5;&#x6210;&#x529F;, USER TODO */
+    }
+}
+
+void dev_obj_dp_handle(const ty_recv_obj_dp_s *dp)
+{
+    int i = 0;
+
+    for (i = 0; i &lt; dp-&gt;dps_cnt; i++) {
+        printf(&quot;dpid: %d\n&quot;, dp-&gt;dps[i].dpid);
+        switch (dp-&gt;dps[i].type) {
+            case PROP_BOOL:
+                printf(&quot;type: bool, value: %d\n&quot;, dp-&gt;dps[i].value.dp_bool);
+                break;
+            case PROP_VALUE:
+                printf(&quot;type: value, value: %d\n&quot;, dp-&gt;dps[i].value.dp_value);
+                break;
+            case PROP_ENUM:
+                printf(&quot;type: enum, value: %d\n&quot;, dp-&gt;dps[i].value.dp_enum);
+                break;
+            case PROP_STR:
+                printf(&quot;type: string, value: %s\n&quot;, dp-&gt;dps[i].value.dp_str);
+                break;
+        }
+    }
+
+    if (dp-&gt;cid == NULL) {
+        /* &#x7F51;&#x5173;&#x529F;&#x80FD;&#x70B9;, USER TODO */
+    } else {
+        /* &#x5B50;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x70B9;, USER TODO */
+    }
+}
+
+int main(int argc, char **argv)
+{
+    ...
+    ty_gw_cbs gw_cbs = {
+        .dev_obj_dp_cb = dev_obj_dp_handle,
+        .dev_raw_dp_cb = dev_raw_dp_handle,
+        .dev_reset_cb = dev_reset_handle
+    };
+    tuya_user_iot_reg_gw_cb(&amp;gw_cbs);
+    ...
+}
+</code></pre><h2 id="6-api-&#x8BE6;&#x89E3;"><a name="6-api-&#x8BE6;&#x89E3;" class="plugin-anchor" href="#6-api-&#x8BE6;&#x89E3;"><i class="fa fa-link" aria-hidden="true"></i></a>6. API &#x8BE6;&#x89E3;</h2>
+<h3 id="61-&#x516C;&#x5171;&#x63A5;&#x53E3;"><a name="61-&#x516C;&#x5171;&#x63A5;&#x53E3;" class="plugin-anchor" href="#61-&#x516C;&#x5171;&#x63A5;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>6.1. &#x516C;&#x5171;&#x63A5;&#x53E3;</h3>
+<h4 id="611-tuyauseriotstart"><a name="611-tuyauseriotstart" class="plugin-anchor" href="#611-tuyauseriotstart"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.1. tuya_user_iot_start</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_iot_start(ty_iot_attr_s *attr, ty_iot_cbs *cbs);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>SDK &#x4E1A;&#x52A1;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5728;&#x8C03;&#x7528;&#x5176;&#x4ED6;&#x63A5;&#x53E3;&#x4E4B;&#x524D;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attr</td>
+<td>ty_iot_attr_s *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x8BBE;&#x7F6E; SDK &#x5728;&#x521D;&#x59CB;&#x5316;&#x9700;&#x8981;&#x7684;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>cbs</td>
+<td>ty_iot_cbs *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x8BBE;&#x7F6E; SDK &#x5728;&#x521D;&#x59CB;&#x5316;&#x8981;&#x8C03;&#x7528;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    char  *tuya_sdk_app;
+    char  *storage_path;
+    char  *img_path;
+    char  *tty_device;
+    uint_t tty_baudrate;
+    char  *eth_ifname;
+    char  *wifi_ifname;
+    char  *ver;
+    int    log_level;
+} ty_iot_attr_s;
+</code></pre><ul>
+<li><code>tuya_sdk_app[&#x53EF;&#x9009;]</code>: &#x6D82;&#x9E26; SDK &#x7A0B;&#x5E8F;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x8C03;&#x7528;&#x521D;&#x59CB;&#x5316;&#x63A5;&#x53E3;&#x4F1A;&#x542F;&#x52A8;&#x8BE5;&#x7A0B;&#x5E8F;&#x3002;&#x82E5;&#x4E0D;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#xFF0C;&#x9ED8;&#x8BA4;&#x5728;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x5BFB;&#x627E; tuya_iot_app&#x3002;  </li>
+<li>storage_path: &#x6570;&#x636E;&#x5E93;&#x7684;&#x5B58;&#x50A8;&#x8DEF;&#x5F84;&#x3002;  </li>
+<li>img_path: &#x56FA;&#x4EF6;&#x5B58;&#x50A8;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;COO &#x4EE5;&#x53CA;&#x5B50;&#x8BBE;&#x5907;&#x5347;&#x7EA7;&#x65F6;&#xFF0C;&#x4ECE;&#x8BE5;&#x8DEF;&#x5F84;&#x83B7;&#x53D6;&#x56FA;&#x4EF6;&#x6587;&#x4EF6;&#x3002;  </li>
+<li>tty_device: &#x4E0E; ZigBee COO &#x6A21;&#x5757;&#x901A;&#x4FE1;&#x7684;&#x4E32;&#x53E3;&#x8BBE;&#x5907;&#xFF0C;&#x5982; /dev/ttyS1&#x3002;  </li>
+<li>tty_baudrate: &#x4E0E; ZigBee COO &#x6A21;&#x5757;&#x901A;&#x4FE1;&#x7684;&#x4E32;&#x53E3;&#x6CE2;&#x7279;&#x7387;&#xFF0C;&#x4EC5;&#x652F;&#x6301; 115200 &#x548C; 57600&#x3002;&#x6CE2;&#x7279;&#x7387;&#x4E3A; 115200 &#x9700;&#x8981;&#x63A5;&#x786C;&#x4EF6;&#x6D41;&#x63A7;&#xFF0C;&#x800C; 57600 &#x5219;&#x4E0D;&#x9700;&#x8981;&#x3002;  </li>
+<li>eth_ifname: UDP &#x62A5;&#x6587;&#x5E7F;&#x64AD;&#x63A5;&#x53E3;&#x3002;  </li>
+<li><code>wifi_ifname[&#x53EF;&#x9009;]</code>: &#x5E26;&#x65E0;&#x7EBF;&#x529F;&#x80FD;&#x7684;&#x7F51;&#x5173;&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x65E0;&#x7EBF;&#x63A5;&#x53E3;&#x3002;  </li>
+<li>ver: &#x8F6F;&#x4EF6;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x6D82;&#x9E26;&#x4E91;&#x8FDB;&#x884C;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;&#x201C;x.x.x&#x201D;&#x3002;  </li>
+<li><code>log_level[&#x53EF;&#x9009;]</code>: &#x8BBE;&#x7F6E; log &#x6253;&#x5370;&#x7B49;&#x7EA7;&#xFF0C;&#x5F00;&#x53D1;&#x9636;&#x6BB5;&#x53EF;&#x5F00;&#x542F; debug &#x6A21;&#x5F0F;&#x3002;  </li>
+</ul>
+<pre class="language-"><code>typedef struct {
+    int (*get_uuid_authkey_cb)(char *uuid, int uuid_size, char *authkey, int authkey_size);
+    int (*get_product_key_cb)(char *pk, int pk_size);
+    int (*dev_led_control_cb)(uint_t itime); 
+    int (*sdk_process_upgrade_cb)(char *img_file);
+    void (*sdk_process_reboot_cb)(void);
+} ty_iot_cbs;
+</code></pre><p>&#x8BF7;&#x53C2;&#x89C1; &#x201C;<strong>SDK &#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;</strong>&#x201D;&#x7AE0;&#x8282;&#x3002;  </p>
+<h4 id="612-tuyauseriotend"><a name="612-tuyauseriotend" class="plugin-anchor" href="#612-tuyauseriotend"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.2. tuya_user_iot_end</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void tuya_user_iot_end(void);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x7A0B;&#x5E8F;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x91CA;&#x653E;&#x8D44;&#x6E90;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;  </p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;  </p>
+<h4 id="613-tuyauserdevreportdpjsonasync"><a name="613-tuyauserdevreportdpjsonasync" class="plugin-anchor" href="#613-tuyauserdevreportdpjsonasync"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.3. tuya_user_dev_report_dp_json_async</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_dev_report_dp_json_async(const char *dev_id, uint_t dps_cnt, ty_obj_dp_s *dps);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x4E0A;&#x62A5;(obj)&#x683C;&#x5F0F;&#x529F;&#x80FD;&#x70B9;&#x3002;    </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+<tr>
+<td>dps_cnt</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x529F;&#x80FD;&#x70B9;&#x6570;&#x91CF;</td>
+</tr>
+<tr>
+<td>dps</td>
+<td>ty_obj_dp_s *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x529F;&#x80FD;&#x70B9;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    byte_t dpid;
+    byte_t type;
+    union {
+        int_t dp_value;
+        uint_t dp_enum;
+        char *dp_str;
+        int dp_bool;
+        uint_t dp_bitmap;
+    } value;
+    uint_t time_stamp;
+} ty_obj_dp_s;
+</code></pre><ul>
+<li>dpid: &#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x7F16;&#x53F7;&#x3002;  </li>
+<li>type: &#x529F;&#x80FD;&#x70B9;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x8BF7;&#x53C2;&#x89C1;<a href="https://docs.tuya.com/zh/iot" target="_blank">&#x6D82;&#x9E26;&#x6587;&#x6863;&#x4E2D;&#x5FC3;</a>&#x7684;&#x529F;&#x80FD;&#x70B9;&#x5B9A;&#x4E49;&#x3002;  </li>
+<li>value: &#x529F;&#x80FD;&#x70B9;&#x7684;&#x503C;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0E; <code>type</code> &#x4E00;&#x81F4;&#x3002;  </li>
+<li>time_stamp:  &#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x503C;&#x4E3A; 0 &#x65F6;&#x91C7;&#x7528;&#x5F53;&#x524D;&#x7684;&#x65F6;&#x95F4;&#x3002;  </li>
+</ul>
+<h4 id="614-tuyauserdevreportdprawsync"><a name="614-tuyauserdevreportdprawsync" class="plugin-anchor" href="#614-tuyauserdevreportdprawsync"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.4. tuya_user_dev_report_dp_raw_sync</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_dev_report_dp_raw_sync(const char *dev_id, uint_t dpid, uint_t len, byte_t *data);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x8BBE;&#x5907;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x4E0A;&#x62A5;(raw)&#x683C;&#x5F0F;&#x529F;&#x80FD;&#x70B9;&#x3002;    </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+<tr>
+<td>dpid</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x7F16;&#x53F7;</td>
+</tr>
+<tr>
+<td>len</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x900F;&#x4F20;&#x6570;&#x636E;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>data</td>
+<td>byte_t *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x900F;&#x4F20;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="615-tuyauseriotgwbinddev"><a name="615-tuyauseriotgwbinddev" class="plugin-anchor" href="#615-tuyauseriotgwbinddev"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.5. tuya_user_iot_gw_bind_dev</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_iot_gw_bind_dev(uint_t uddd, const char *dev_id, const char *pid, const char *ver);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x6D82;&#x9E26; APP &#x4F7F;&#x80FD;&#x7F51;&#x5173;&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;&#xFF0C;&#x7F51;&#x5173;&#x4E0E;&#x5B50;&#x8BBE;&#x5907;&#x5173;&#x8054;&#x540E;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x5C06;&#x53D1;&#x73B0;&#x7684;&#x5B50;&#x8BBE;&#x5907;&#x7ED1;&#x5B9A;&#x3002;     </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uddd</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x7528;&#x4E8E;&#x533A;&#x5206;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x6700;&#x9AD8;&#x4F4D;&#x5FC5;&#x987B;&#x662F; 1</td>
+</tr>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+<tr>
+<td>pid</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x521B;&#x5EFA;&#x5B50;&#x8BBE;&#x5907;&#x4EA7;&#x54C1;&#x5F97;&#x5230;&#x7684; PID</td>
+</tr>
+<tr>
+<td>ver</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x8F6F;&#x4EF6;&#x7248;&#x672C;&#xFF0C;&#x7528;&#x4E8E;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="616-tuyauseriotgwunbinddev"><a name="616-tuyauseriotgwunbinddev" class="plugin-anchor" href="#616-tuyauseriotgwunbinddev"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.6. tuya_user_iot_gw_unbind_dev</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_iot_gw_unbind_dev(const char *dev_id);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x5C06;&#x5B50;&#x8BBE;&#x5907;&#x4ECE;&#x7F51;&#x5173;&#x4E0A;&#x79FB;&#x9664;&#x3002;       </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="617-tuyauseriotfreshdevhb"><a name="617-tuyauseriotfreshdevhb" class="plugin-anchor" href="#617-tuyauseriotfreshdevhb"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.7. tuya_user_iot_fresh_dev_hb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_iot_fresh_dev_hb(const char *dev_id);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x7F51;&#x5173;&#x6536;&#x5230;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x5FC3;&#x8DF3;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x5237;&#x65B0;&#x5B50;&#x8BBE;&#x5907;&#x5728;&#x7EBF;&#x72B6;&#x6001;&#x3002;     </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="618-tuyauseriotscenelinkageexec"><a name="618-tuyauseriotscenelinkageexec" class="plugin-anchor" href="#618-tuyauseriotscenelinkageexec"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.8. tuya_user_iot_scene_linkage_exec</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int tuya_user_iot_scene_linkage_exec(ty_scene_linkage_attr *attr);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x8C03;&#x7528;&#x6B64;&#x63A5;&#x53E3;&#x89E6;&#x53D1;&#x8054;&#x52A8;&#x7684;&#x76F8;&#x5E94;&#x52A8;&#x4F5C;&#x3002;   </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attr</td>
+<td>ty_scene_linkage_attr *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x89E6;&#x53D1;&#x8054;&#x52A8;&#x52A8;&#x4F5C;&#x9700;&#x8981;&#x7684;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    char *rule_id;
+} ty_scene_linkage_attr;
+</code></pre><ul>
+<li>rule_id: &#x8054;&#x52A8;&#x89C4;&#x5219; ID&#x3002;  </li>
+</ul>
+<h4 id="619-tuyauseriotreggwcb"><a name="619-tuyauseriotreggwcb" class="plugin-anchor" href="#619-tuyauseriotreggwcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.9. tuya_user_iot_reg_gw_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void tuya_user_iot_reg_gw_cb(ty_gw_cbs *cbs);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x6CE8;&#x518C;&#x7F51;&#x5173;&#x7684;&#x56DE;&#x8C03;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cbs</td>
+<td>ty_gw_cbs *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x7F51;&#x5173;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;</p>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    void (*dev_obj_dp_cb)(ty_recv_obj_dp_s *dp);
+    void (*dev_raw_dp_cb)(ty_recv_raw_dp_s *dp);
+    void (*dev_reset_cb)(const char *dev_id, int type);
+} ty_gw_cbs;
+</code></pre><p>&#x8BF7;&#x53C2;&#x89C1;&#x201C;<strong>&#x7F51;&#x5173;&#x56DE;&#x8C03;</strong>&#x201D;&#x7AE0;&#x8282;&#x3002;  </p>
+<h4 id="6110-tuyauseriotreggwdevcb"><a name="6110-tuyauseriotreggwdevcb" class="plugin-anchor" href="#6110-tuyauseriotreggwdevcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.1.10. tuya_user_iot_reg_gw_dev_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void tuya_user_iot_reg_gw_dev_cb(ty_gw_dev_cbs *cbs);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x6CE8;&#x518C;&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x7684;&#x56DE;&#x8C03;&#x3002;    </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cbs</td>
+<td>ty_gw_dev_cbs *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x56DE;&#x8C03;&#x51FD;&#x6570;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;</p>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    void (*gw_dev_add_cb)(int permit, uint_t timeout);
+    void (*gw_dev_del_cb)(const char *dev_id);
+    void (*gw_dev_bind_ifm_cb)(const char *dev_id, int result);
+} ty_gw_dev_cbs;
+</code></pre><p>&#x8BF7;&#x53C2;&#x89C1;&#x201C;<strong>&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;</strong>&#x201D;&#x7AE0;&#x8282;&#x3002; </p>
+<h3 id="62-sdk-&#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;"><a name="62-sdk-&#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;" class="plugin-anchor" href="#62-sdk-&#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;"><i class="fa fa-link" aria-hidden="true"></i></a>6.2. SDK &#x521D;&#x59CB;&#x5316;&#x56DE;&#x8C03;</h3>
+<p>&#x4EE5;&#x4E0B;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x9700;&#x8981;&#x5728; <code>tuya_user_iot_start</code> &#x63A5;&#x53E3;&#x4E0A;&#x6CE8;&#x518C;&#x3002;  </p>
+<h4 id="621-getuuidauthkeycb"><a name="621-getuuidauthkeycb" class="plugin-anchor" href="#621-getuuidauthkeycb"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.1. get_uuid_authkey_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int get_uuid_authkey_cb(char *uuid, int uuid_size, char *authkey, int authkey_size);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x628A;&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#x83B7;&#x53D6;&#x5230;&#x7684; uuid &#x548C; authkey &#x8D4B;&#x503C;&#x5230; uuid &#x548C; authkey &#x53D8;&#x91CF;&#x4E2D;&#x3002;    </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>uuid</td>
+<td>char *</td>
+<td>&#x8F93;&#x51FA;</td>
+<td>&#x5C06; uuid &#x8D4B;&#x503C;&#x7ED9;&#x8BE5;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td>uuid_size</td>
+<td>int</td>
+<td>&#x8F93;&#x5165;</td>
+<td>uuid &#x5BF9;&#x5E94;&#x7684; buf &#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>authkey</td>
+<td>char *</td>
+<td>&#x8F93;&#x51FA;</td>
+<td>&#x5C06; authkey &#x8D4B;&#x503C;&#x7ED9;&#x8BE5;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td>authkey_size</td>
+<td>int</td>
+<td>&#x8F93;&#x5165;</td>
+<td>authkey &#x5BF9;&#x5E94;&#x7684; buf &#x5927;&#x5C0F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="622-getproductkeycb"><a name="622-getproductkeycb" class="plugin-anchor" href="#622-getproductkeycb"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.2. get_product_key_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int get_product_key_cb(char *pk, int pk_size);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x628A;&#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#x83B7;&#x53D6;&#x5230;&#x7684; PID &#x8D4B;&#x503C;&#x5230; pk &#x53D8;&#x91CF;&#x4E2D;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pk</td>
+<td>char *</td>
+<td>&#x8F93;&#x51FA;</td>
+<td>&#x5C06; PID &#x8D4B;&#x503C;&#x7ED9;&#x8BE5;&#x53D8;&#x91CF;</td>
+</tr>
+<tr>
+<td>pk_size</td>
+<td>int</td>
+<td>&#x8F93;&#x5165;</td>
+<td>pk &#x5BF9;&#x5E94;&#x7684; buf &#x5927;&#x5C0F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="623-devledcontrolcb"><a name="623-devledcontrolcb" class="plugin-anchor" href="#623-devledcontrolcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.3. dev_led_control_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int dev_led_control_cb(uint_t itime);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x63A7;&#x5236;&#x914D;&#x7F51; LED &#x706F;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x5B9E;&#x73B0;&#x914D;&#x7F51; LED &#x7684;&#x786C;&#x4EF6;&#x63A7;&#x5236;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>itime</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x7B49;&#x4E8E; 0: &#x914D;&#x7F51;&#x706F;&#x706D;&#x3002;<br>&#x7B49;&#x4E8E; 1: &#x914D;&#x7F51;&#x706F;&#x5E38;&#x4EAE;&#x3002;<br>&#x5927;&#x4E8E; 1: &#x4EE5; itime &#x7684;&#x9891;&#x7387;&#x95EA;&#x70C1;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A; ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="624-sdkprocessrebootcb"><a name="624-sdkprocessrebootcb" class="plugin-anchor" href="#624-sdkprocessrebootcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.4. sdk_process_reboot_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void sdk_process_reboot_cb(void);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x7F51;&#x5173;&#x91CD;&#x7F6E;&#x6216;&#x8005; ZigBee COO &#x5347;&#x7EA7;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x8981;&#x53BB;&#x91CD;&#x542F;&#x6D82;&#x9E26; SDK&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x91CD;&#x542F;&#x6D82;&#x9E26; SDK &#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;  </p>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;</p>
+<h4 id="625-sdkprocessupgradecb"><a name="625-sdkprocessupgradecb" class="plugin-anchor" href="#625-sdkprocessupgradecb"><i class="fa fa-link" aria-hidden="true"></i></a>6.2.5. sdk_process_upgrade_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>int sdk_process_upgrade_cb(char *img_file);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5728; APP &#x4E0A;&#x6267;&#x884C;&#x7F51;&#x5173;&#x5347;&#x7EA7;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x5B9E;&#x73B0;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x3002;   </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>img_file</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x7F51;&#x5173;&#x7684;&#x56FA;&#x4EF6;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>&#x8FD4;&#x56DE;&#x503C;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&#x6210;&#x529F;</td>
+</tr>
+<tr>
+<td>&#x975E;0</td>
+<td>&#x5931;&#x8D25;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="63-&#x7F51;&#x5173;&#x56DE;&#x8C03;"><a name="63-&#x7F51;&#x5173;&#x56DE;&#x8C03;" class="plugin-anchor" href="#63-&#x7F51;&#x5173;&#x56DE;&#x8C03;"><i class="fa fa-link" aria-hidden="true"></i></a>6.3. &#x7F51;&#x5173;&#x56DE;&#x8C03;</h3>
+<p>&#x4EE5;&#x4E0B;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x9700;&#x8981;&#x5728; <code>tuya_user_iot_reg_gw_cb</code> &#x63A5;&#x53E3;&#x4E0A;&#x6CE8;&#x518C;&#x3002;  </p>
+<h4 id="631-devobjdpcb"><a name="631-devobjdpcb" class="plugin-anchor" href="#631-devobjdpcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.1. dev_obj_dp_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void dev_obj_dp_cb(ty_recv_obj_dp_s *dp);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x4E0B;&#x53D1;&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x628A;(obj)&#x683C;&#x5F0F;&#x529F;&#x80FD;&#x70B9;&#x89E3;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x5B9E;&#x73B0;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x3002; </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dp</td>
+<td>ty_recv_obj_dp_s *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x63A7;&#x5236;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;  </p>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    byte_t cmd_tp; 
+    byte_t dtt_tp;
+    char *cid; 
+    char *mb_id;
+    uint_t dps_cnt;
+    ty_obj_dp_s dps[0];
+} ty_recv_obj_dp_s;
+</code></pre><ul>
+<li>cmd_tp: &#x6307;&#x4EE4;&#x7C7B;&#x578B;&#x3002;0 &#x8868;&#x793A; LAN &#x89E6;&#x53D1;&#xFF0C;1 &#x8868;&#x793A; MQTT &#x89E6;&#x53D1;&#xFF0C;2 &#x8868;&#x793A; &#x672C;&#x5730;&#x5B9A;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;3 &#x8868;&#x793A;&#x573A;&#x666F;&#x8054;&#x52A8;&#x89E6;&#x53D1;&#xFF0C;4 &#x8868;&#x793A;&#x91CD;&#x53D1;&#x3002;  </li>
+<li>dtt_tp:  &#x4F20;&#x8F93;&#x65B9;&#x5F0F;&#x3002;0 &#x8868;&#x793A;&#x5355;&#x64AD;&#xFF0C;1 &#x8868;&#x793A;&#x5E7F;&#x64AD;&#xFF0C;2 &#x8868;&#x793A;&#x7EC4;&#x64AD;&#xFF0C;3 &#x8868;&#x793A;&#x573A;&#x666F;&#x3002;  </li>
+<li>cid: <strong><em>cid == NULL</em></strong> &#x8868;&#x793A;&#x63A7;&#x5236;&#x7684;<strong>&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;&#x70B9;</strong>&#xFF1B;<strong><em>cid != NULL</em></strong> &#x8868;&#x793A;&#x63A7;&#x5236;&#x7684;<strong>&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x529F;&#x80FD;&#x70B9;</strong>&#xFF0C;&#x5176;&#x4E2D; cid &#x662F;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID&#x3002;  </li>
+<li>mb_id: &#x7FA4;&#x7EC4; ID&#xFF0C;&#x53EA;&#x6709;&#x5F53; <code>dtt_tp = 2</code> &#x65F6;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x624D;&#x6709;&#x6548;&#x3002;  </li>
+<li>dps_cnt: &#x4E0B;&#x53D1;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x6570;&#x91CF;&#xFF0C;&#x4E5F;&#x662F;&#x529F;&#x80FD;&#x70B9;&#x7ED3;&#x6784;&#x4F53;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#x3002; </li>
+<li>dps: &#x6570;&#x636E;&#x7C7B;&#x578B;&#x8BF4;&#x660E;&#x8BF7;&#x53C2;&#x89C1; <code>tuya_user_dev_report_dp_json_async</code> &#x63A5;&#x53E3;&#x7684;&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;&#x3002;    </li>
+</ul>
+<h4 id="632-devrawdpcb"><a name="632-devrawdpcb" class="plugin-anchor" href="#632-devrawdpcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.2. dev_raw_dp_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void dev_raw_dp_cb(ty_recv_raw_dp_s *dp);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x4E0B;&#x53D1;&#x63A7;&#x5236;&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x628A;(raw)&#x683C;&#x5F0F;&#x529F;&#x80FD;&#x70B9;&#x89E3;&#x6790;&#xFF0C;&#x7136;&#x540E;&#x5B9E;&#x73B0;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x3002; </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dp</td>
+<td>ty_recv_raw_dp_s *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x63A7;&#x5236;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;  </p>
+<p><strong>&#x53C2;&#x6570;&#x9644;&#x52A0;&#x8BF4;&#x660E;</strong>  </p>
+<pre class="language-"><code>typedef struct {
+    byte_t cmd_tp;
+    byte_t dtt_tp;
+    char *cid;
+    byte_t dpid;
+    char *mb_id;
+    uint_t len;
+    byte_t data[0];
+} ty_recv_raw_dp_s;
+</code></pre><ul>
+<li>cmd_tp: &#x6307;&#x4EE4;&#x7C7B;&#x578B;&#x3002;0 &#x8868;&#x793A; LAN &#x89E6;&#x53D1;&#xFF0C;1 &#x8868;&#x793A; MQTT &#x89E6;&#x53D1;&#xFF0C;2 &#x8868;&#x793A; &#x672C;&#x5730;&#x5B9A;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;3 &#x8868;&#x793A;&#x573A;&#x666F;&#x8054;&#x52A8;&#x89E6;&#x53D1;&#xFF0C;4 &#x8868;&#x793A;&#x91CD;&#x53D1;&#x3002;  </li>
+<li>dtt_tp:  &#x4F20;&#x8F93;&#x65B9;&#x5F0F;&#x3002;0 &#x8868;&#x793A;&#x5355;&#x64AD;&#xFF0C;1 &#x8868;&#x793A;&#x5E7F;&#x64AD;&#xFF0C;2 &#x8868;&#x793A;&#x7EC4;&#x64AD;&#xFF0C;3 &#x8868;&#x793A;&#x573A;&#x666F;&#x3002;  </li>
+<li>cid: <strong><em>cid == NULL</em></strong> &#x8868;&#x793A;&#x63A7;&#x5236;&#x7684;<strong>&#x7F51;&#x5173;&#x7684;&#x529F;&#x80FD;&#x70B9;</strong>&#xFF1B;<strong><em>cid != NULL</em></strong> &#x8868;&#x793A;&#x63A7;&#x5236;&#x7684;<strong>&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x529F;&#x80FD;&#x70B9;</strong>&#xFF0C;&#x5176;&#x4E2D; cid &#x662F;&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID&#x3002;  </li>
+<li>dpid: &#x5728;&#x6D82;&#x9E26; IoT &#x5E73;&#x53F0;&#x4E0A;&#x5B9A;&#x4E49;&#x7684;&#x529F;&#x80FD;&#x70B9;&#x7F16;&#x53F7;&#x3002;  </li>
+<li>mb_id: &#x7FA4;&#x7EC4; ID&#xFF0C;&#x53EA;&#x6709;&#x5F53; <code>dtt_tp = 2</code> &#x65F6;&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x624D;&#x6709;&#x6548;&#x3002;  </li>
+<li>len: &#x900F;&#x4F20;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x3002; </li>
+<li>data: &#x900F;&#x4F20;&#x6570;&#x636E;&#x3002;    </li>
+</ul>
+<h4 id="633-devresetcb"><a name="633-devresetcb" class="plugin-anchor" href="#633-devresetcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.3.3. dev_reset_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void dev_reset_cb(const char *dev_id, int type);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x5728; APP &#x6062;&#x590D;&#x5B50;&#x8BBE;&#x5907;&#x51FA;&#x4EA7;&#x8BBE;&#x7F6E;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x5B50;&#x8BBE;&#x5907;&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&#x529F;&#x80FD;&#x3002;   </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>ty_recv_obj_dp_s *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+<tr>
+<td>type</td>
+<td>int</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x503C;&#x4E3A; 1 &#x8868;&#x793A;&#x6062;&#x590D;&#x51FA;&#x5382;&#x8BBE;&#x7F6E;&#x540E;&#x8FD8;&#x6E05;&#x7A7A;&#x7F51;&#x5173;&#x672C;&#x5730;&#x7684;&#x7ED1;&#x5B9A;&#x4FE1;&#x606F;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;    </p>
+<h3 id="64-&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;"><a name="64-&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;" class="plugin-anchor" href="#64-&#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;"><i class="fa fa-link" aria-hidden="true"></i></a>6.4. &#x7F51;&#x5173;&#x5B50;&#x8BBE;&#x5907;&#x7BA1;&#x7406;&#x56DE;&#x8C03;</h3>
+<p>&#x4EE5;&#x4E0B;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x9700;&#x8981;&#x5728; <code>tuya_user_iot_reg_gw_dev_cb</code> &#x63A5;&#x53E3;&#x4E0A;&#x6CE8;&#x518C;&#x3002;  </p>
+<h4 id="641-gwdevaddcb"><a name="641-gwdevaddcb" class="plugin-anchor" href="#641-gwdevaddcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.4.1. gw_dev_add_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void gw_dev_add_cb(int permit, uint_t timeout);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x6DFB;&#x52A0;&#x5B50;&#x8BBE;&#x5907;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x4F7F;&#x80FD;&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;&#x529F;&#x80FD;&#x3002;</p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>permit</td>
+<td>int</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x63A7;&#x5236;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5B50;&#x8BBE;&#x5907;&#x5165;&#x7F51;</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>uint_t</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5141;&#x8BB8;&#x914D;&#x7F51;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;     </p>
+<h4 id="642-gwdevdelcb"><a name="642-gwdevdelcb" class="plugin-anchor" href="#642-gwdevdelcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.4.2. gw_dev_del_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void gw_dev_del_cb(const char *dev_id);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x5220;&#x9664;&#x5B50;&#x8BBE;&#x5907;&#x65F6;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x4E2D;&#x5B9E;&#x73B0;&#x5220;&#x9664;&#x5B50;&#x8BBE;&#x5907;&#x529F;&#x80FD;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;     </p>
+<h4 id="643-gwdevbindifmcb"><a name="643-gwdevbindifmcb" class="plugin-anchor" href="#643-gwdevbindifmcb"><i class="fa fa-link" aria-hidden="true"></i></a>6.4.3. gw_dev_bind_ifm_cb</h4>
+<p><strong>&#x63A5;&#x53E3;&#x539F;&#x578B;</strong>  </p>
+<pre class="language-"><code>void gw_dev_bind_ifm_cb(const char *dev_id, int result);
+</code></pre><p><strong>&#x63A5;&#x53E3;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x5F53;&#x5B50;&#x8BBE;&#x5907;&#x7ED1;&#x5B9A;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x8C03;&#x7528;&#x6B64;&#x56DE;&#x8C03;&#x63A5;&#x53E3;&#xFF0C;&#x5BA2;&#x6237;&#x5728;&#x6B64;&#x56DE;&#x8C03;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x7ED1;&#x5B9A;&#x7684;&#x7ED3;&#x679C;&#x505A;&#x4E1A;&#x52A1;&#x5904;&#x7406;&#x3002;  </p>
+<p><strong>&#x53C2;&#x6570;&#x8BF4;&#x660E;</strong>  </p>
+<table>
+<thead>
+<tr>
+<th><strong>&#x53C2;&#x6570;</strong></th>
+<th><strong>&#x6570;&#x636E;&#x7C7B;&#x578B;</strong></th>
+<th><strong>&#x65B9;&#x5411;</strong></th>
+<th><strong>&#x8BF4;&#x660E;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dev_id</td>
+<td>char *</td>
+<td>&#x8F93;&#x5165;</td>
+<td>&#x5B50;&#x8BBE;&#x5907;&#x7684;&#x552F;&#x4E00; ID</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x8BF4;&#x660E;</strong>  </p>
+<p>&#x65E0;     </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"><a href="https://github.com/TuyaInc" target="_blank">Tuya Inc</a><sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;"><a href="https://www.tuya.com" target="_blank">www.tuya.com</a></p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Tuya Inc all right reserved</p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">Modified at</span>
+2019-12-02 17:40:27
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gw-18-send.html" class="navigation navigation-prev " aria-label="Previous page: 状态上报">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1_Gerneral_Link_Module_SDK_zh.html" class="navigation navigation-next " aria-label="Next page: 通用联网模块SDK用户手册">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"涂鸦网关通用SDK用户手册","level":"1.3","depth":1,"next":{"title":"通用联网模块SDK用户手册","level":"1.4","depth":1,"path":"resource/1_Gerneral_Link_Module_SDK_zh.md","ref":"./resource/1_Gerneral_Link_Module_SDK_zh.md","articles":[]},"previous":{"title":"状态上报","level":"1.2.13.2","depth":3,"path":"resource/gw-18-send.md","ref":"./resource/gw-18-send.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter","page-treeview","advanced-emoji","todo","back-to-top-button","copy-code-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"todo":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/1_Tuya Gateway Common SDK Users Manual_zh.md","mtime":"2019-12-02T09:40:27.966Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T09:49:40.107Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-plantuml/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
