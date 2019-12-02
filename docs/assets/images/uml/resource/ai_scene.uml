@@ -1,3 +1,17 @@
 ```uml
+@startuml
+title 创建场景
+participant TuyaApp
+participant tuya_sdk
+participant gateway
+participant TuyaCloud
 
+Note over TuyaApp:用户创建场景
+TuyaApp->TuyaCloud:场景联动逻辑
+TuyaCloud-->tuya_sdk:"protocol":49 ruleId
+tuya_sdk->TuyaCloud:获取场景逻辑 tuya.device.linkage.rule.query
+tuya_sdk-->tuya_sdk:判断是否满足本地化条件,满足把逻辑存入本地
+tuya_sdk->TuyaCloud:场景联动本地化 tuya.device.linkage.rule.localize
+TuyaCloud-->tuya_sdk:OK
+@enduml
 ```

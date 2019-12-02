@@ -14,7 +14,7 @@ Note over TuyaApp:用户启动升级
 TuyaApp->tuya_sdk:通知升级
 tuya_sdk->TuyaCloud:获取设备升级信息
 TuyaCloud-->tuya_sdk:有升级任务
-tuya_sdk->gateway:__dev_ug_inform_cb
+tuya_sdk->gateway:DEV_UG_INFORM_CB
 gateway-[#FF0000]>tuya_sdk: tuya_iot_upgrade_dev_notify，注册回调
 Note over tuya_sdk:创建升级线程,dp下发通道关闭
 tuya_sdk->TuyaCloud:更新设备升级状态为升级中
@@ -22,12 +22,12 @@ TuyaCloud-->tuya_sdk:success
 loop Downloading
 tuya_sdk->TuyaCloud:Download
 TuyaCloud-->tuya_sdk:
-tuya_sdk->gateway:__get_file_data_cb
+tuya_sdk->gateway:GET_FILE_DATA_CB
 gateway-->tuya_sdk:return OPRT_OK
 Note over gateway:接收保存固件
 end
 Note over tuya_sdk:退出升级线程,dp下发通道打开
-tuya_sdk->gateway:__upgrade_notify_cb通知下载结果
+tuya_sdk->gateway:UPGRADE_NOTIFY_CB 通知下载结果
 loop Send to sub_device
 gateway->sub_device:发送固件包
 sub_device-->gateway:ACK

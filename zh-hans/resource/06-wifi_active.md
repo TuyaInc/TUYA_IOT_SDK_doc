@@ -23,17 +23,17 @@ WiFi设备配网主要有Smart模式和AP模式两种, Smart配网模式需要�
 
 ```sequence
 Title: 
-participant Device
+participant 用户层
 participant tuya_sdk
 
-Device->tuya_sdk: call tuya_iot_wf_gw_unactive
-tuya_sdk-->Device: return OPRT_OK
-tuya_sdk->Device: __soc_dev_reset_req_cb
-Device->tuya_sdk: 重启 tuya_sdk 进程
-tuya_sdk-->Device: 进入配网模式
-Device->tuya_sdk: tuya_iot_wf_fast_get_nc_type
-tuya_sdk-->Device: 返回当前配网模式
-Device-->Device: 配网LED闪烁,可以添加设备
+用户层->tuya_sdk: call tuya_iot_wf_gw_unactive
+tuya_sdk-->用户层: return OPRT_OK
+tuya_sdk->用户层: GW_RESET_IFM_CB(GW_LOCAL_UNACTIVE)
+用户层->tuya_sdk: 重启 tuya_sdk 进程
+tuya_sdk-->用户层: 进入配网模式
+用户层->tuya_sdk: tuya_iot_wf_fast_get_nc_type
+tuya_sdk-->用户层: 返回当前配网模式
+用户层-->用户层: 配网LED闪烁,可以添加设备
 ```
 ### 设备重置
 

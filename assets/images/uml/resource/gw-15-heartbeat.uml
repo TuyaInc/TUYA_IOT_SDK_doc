@@ -7,12 +7,15 @@ participant gateway
 participant tuya_sdk
 participant TuyaCloud
 
-gateway->tuya_sdk:tuya_iot_sys_mag_hb_init(__hb_send_cb)\n开启tuya_sdk心跳检测
+gateway->tuya_sdk:tuya_iot_sys_mag_hb_init(DEV_HEARTBEAT_SEND_CB)\n开启tuya_sdk心跳检测
 tuya_sdk-->gateway:return OPRT_OK
-gateway->tuya_sdk:tuya_iot_set_dev_hb_timeout_cfg\n设置心跳超时时间
+gateway->tuya_sdk:tuya_iot_set_dev_hb_timeout\n设置心跳超时时间
+tuya_sdk-->gateway:return OPRT_OK
+sub_device->gateway:上报数据
+gateway->tuya_sdk:tuya_iot_fresh_dev_hb 刷新子设备心跳时间
 tuya_sdk-->gateway:return OPRT_OK
 loop 根据超时时间，周期性刷新子设备心跳
-tuya_sdk->gateway:__hb_send_cb 提醒刷新心跳
+tuya_sdk->gateway:DEV_HEARTBEAT_SEND_CB 提醒刷新心跳
 gateway->sub_device:发送心跳
 sub_device-->gateway:应答
 gateway->tuya_sdk:tuya_iot_fresh_dev_hb 刷新子设备心跳时间

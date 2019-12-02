@@ -7,34 +7,33 @@ Smart配网需要网卡支持进入sniffer模式，捕获空气中的所有无�
 ```sequence
 Title: 
 participant TuyaApp
-participant Device
+participant 用户层
 participant tuya_sdk
 participant TuyaCloud
 
-tuya_sdk->Device: hwl_wf_wk_mode_set(WWM_STATION)
-tuya_sdk->Device: hwl_wf_all_ap_scan
-tuya_sdk->Device: hwl_wf_wk_mode_set(WWM_SNIFFER)
-tuya_sdk->Device: create func_Sniffer thread
+tuya_sdk->用户层: hwl_wf_wk_mode_set(WWM_STATION)
+tuya_sdk->用户层: hwl_wf_all_ap_scan
+tuya_sdk->用户层: hwl_wf_wk_mode_set(WWM_SNIFFER)
+tuya_sdk->用户层: create func_Sniffer thread
 TuyaApp->TuyaApp:用户选择Smart模式添加设备
-Note over TuyaApp: 广播发送ssid/pwd/token
-tuya_sdk->Device: hwl_wf_set_cur_channel
-Note over Device: 切换信道捕捉报文
-Device->Device:捕捉到合法的网络报文
-Device-->tuya_sdk:s_pSnifferCall(rev_buf,len)
+Note over TuyaApp: 广播发送ssid/passwd/token
+tuya_sdk->用户层: hwl_wf_set_cur_channel
+Note over 用户层: 切换信道捕捉报文
+用户层->用户层:捕捉到合法的网络报文
+用户层-->tuya_sdk:s_pSnifferCall(rev_buf,len)
 tuya_sdk->tuya_sdk:解析出ssid/passwd/token
-tuya_sdk->Device: exit func_Sniffer thread
-tuya_sdk->Device: hwl_wf_wk_mode_set(WWM_STATION) 
-tuya_sdk->Device: hwl_wf_station_connect(ssid,passwd)
-Device-->tuya_sdk: return OPRT_OK
-tuya_sdk->Device: hwl_wf_station_stat_get
+tuya_sdk->用户层: exit func_Sniffer thread
+tuya_sdk->用户层: hwl_wf_wk_mode_set(WWM_STATION) 
+tuya_sdk->用户层: hwl_wf_station_connect(ssid,passwd)
+用户层-->tuya_sdk: return OPRT_OK
+tuya_sdk->用户层: hwl_wf_station_stat_get
 Note over tuya_sdk: 每隔1s查询一次网络状态
-Device-->tuya_sdk: WSS_GOT_IP
+用户层-->tuya_sdk: WSS_GOT_IP
 tuya_sdk->TuyaCloud: 请求设备激活
 TuyaCloud-->tuya_sdk: 设备激活成功
-tuya_sdk->Device: __soc_dev_net_status_cb(STAT_CLOUD_CONN)\n通知设备配网成功
+tuya_sdk->用户层: GET_WF_NW_STAT_CB(STAT_CLOUD_CONN)\n通知设备配网成功
 TuyaApp->TuyaCloud:刷新设备列表
 TuyaCloud-->TuyaApp:设备列表新增设备
-
 ```
 
 ### 用户需实现的接口说明

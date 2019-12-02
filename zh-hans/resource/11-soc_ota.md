@@ -17,7 +17,7 @@ Note over TuyaApp:用户启动升级
 TuyaApp->tuya_sdk:通知升级
 tuya_sdk->TuyaCloud:获取设备升级信息
 TuyaCloud-->tuya_sdk:有升级任务
-tuya_sdk->device:__soc_dev_rev_upgrade_info_cb
+tuya_sdk->device:GW_UG_INFORM_CB
 device->tuya_sdk: tuya_iot_upgrade_gw_notify，注册回调
 Note over tuya_sdk:创建升级线程,dp下发通道关闭
 tuya_sdk->TuyaCloud:更新设备升级状态为升级中

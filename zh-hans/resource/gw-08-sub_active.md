@@ -1,6 +1,8 @@
 ## 子设备配网
 
-### 子设备配网数据交互图
+### 数据交互图
+- 此图为从手机APP端添加子设备；
+- 网关端也可调用tuya_iot_gw_bind_dev_attr直接绑定
 
 ```sequence
 Title:sub device active
@@ -11,16 +13,11 @@ participant gateway
 participant tuya_sdk
 participant TuyaCloud
 
-sub_device->gateway:重置子设备
-gateway->tuya_sdk:tuya_iot_gw_unbind_dev
-tuya_sdk-->gateway:return OPRT_OK
-tuya_sdk->TuyaCloud:请求解绑设备
-TuyaCloud-->tuya_sdk:解绑成功
-gateway-->sub_device:OK
 Note over TuyaApp: 添加子设备
 TuyaApp->tuya_sdk:请求添加
 tuya_sdk->gateway:__gw_permit_add_dev_cb(true)
-gateway->sub_device:请求子设备信息
+TuyaApp-->TuyaCloud:刷新设备列表
+gateway->sub_device:开启配网
 sub_device-->gateway:应答
 gateway->tuya_sdk: tuya_iot_gw_bind_dev_attr
 tuya_sdk-->gateway:return OPRT_OK
@@ -29,6 +26,9 @@ TuyaCloud-->tuya_sdk:激活成功
 tuya_sdk->gateway:__gw_bind_dev_inform_cb通知激活结果
 TuyaApp->TuyaCloud:刷新设备列表
 TuyaCloud-->TuyaApp:返回设备信息
+Note over TuyaApp: 退出添加子设备界面
+TuyaApp->tuya_sdk:关闭添加
+tuya_sdk->gateway:__gw_permit_add_dev_cb(false)
 ```
 说明：sub_device 和 gateway之间通信协议由用户实现
 

@@ -25,7 +25,7 @@ Note over tuya_sdk: 每隔1s查询一次网络状态
 Device-->tuya_sdk: WSS_GOT_IP
 tuya_sdk->TuyaCloud: 请求设备激活
 TuyaCloud-->tuya_sdk: 设备激活成功
-tuya_sdk->Device: __soc_dev_net_status_cb(STAT_CLOUD_CONN)\n通知设备配网成功
+tuya_sdk->Device: GET_WF_NW_STAT_CB(STAT_CLOUD_CONN)\n通知设备配网成功
 TuyaApp->TuyaCloud:刷新设备列表
 TuyaCloud-->TuyaApp:设备列表新增设备
 ```

@@ -1,0 +1,1330 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MCU开发说明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-okaidia.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-plantuml/test.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-copyright/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="gyro_robot_demo.html" />
+    
+    
+    <link rel="prev" href="gyro_robot_access_process.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-Scope.html">
+            
+                <a href="01-Scope.html">
+            
+                    
+                    WiFi单品设备
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="SDK_directory.html">
+            
+                <a href="SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="03-init.html">
+            
+                <a href="03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="04-sdk_init.html">
+            
+                <a href="04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="05-device_init.html">
+            
+                <a href="05-device_init.html">
+            
+                    
+                    设备初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="06-wifi_active.html">
+            
+                <a href="06-wifi_active.html">
+            
+                    
+                    设备配网
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="07-ap_active.html">
+            
+                <a href="07-ap_active.html">
+            
+                    
+                    AP配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="08-smart_active.html">
+            
+                <a href="08-smart_active.html">
+            
+                    
+                    Smart配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="wifi_api.html">
+            
+                <a href="wifi_api.html">
+            
+                    
+                    公共函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="09-other_active.html">
+            
+                <a href="09-other_active.html">
+            
+                    
+                    其他方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="10-ota.html">
+            
+                <a href="10-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="11-soc_ota.html">
+            
+                <a href="11-soc_ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="16-control.html">
+            
+                <a href="16-control.html">
+            
+                    
+                    功能点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="17-rev.html">
+            
+                <a href="17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="18-send.html">
+            
+                <a href="18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="19-irobot.html">
+            
+                <a href="19-irobot.html">
+            
+                    
+                    扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="20-media.html">
+            
+                <a href="20-media.html">
+            
+                    
+                    流服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="21-oss.html">
+            
+                <a href="21-oss.html">
+            
+                    
+                    云存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="gw-01-introduct.html">
+            
+                <a href="gw-01-introduct.html">
+            
+                    
+                    网关产品
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="gw-SDK_directory.html">
+            
+                <a href="gw-SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="gw-03-init.html">
+            
+                <a href="gw-03-init.html">
+            
+                    
+                    初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="gw-04-sdk_init.html">
+            
+                <a href="gw-04-sdk_init.html">
+            
+                    
+                    SDK初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="gw-05-gw_init.html">
+            
+                <a href="gw-05-gw_init.html">
+            
+                    
+                    网关初始化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="gw-07-gw_active.html">
+            
+                <a href="gw-07-gw_active.html">
+            
+                    
+                    网关配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="gw-08-sub_active.html">
+            
+                <a href="gw-08-sub_active.html">
+            
+                    
+                    子设备配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="gw-09-ota.html">
+            
+                <a href="gw-09-ota.html">
+            
+                    
+                    固件升级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="gw-10-gw_ota.html">
+            
+                <a href="gw-10-gw_ota.html">
+            
+                    
+                    网关固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="gw-11-sub_ota.html">
+            
+                <a href="gw-11-sub_ota.html">
+            
+                    
+                    子设备固件升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="gw-12-sub_manage.html">
+            
+                <a href="gw-12-sub_manage.html">
+            
+                    
+                    子设备管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="gw-13-grp_infm.html">
+            
+                <a href="gw-13-grp_infm.html">
+            
+                    
+                    组操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="gw-14-scene_infm.html">
+            
+                <a href="gw-14-scene_infm.html">
+            
+                    
+                    场景管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="gw-15-heartbeat.html">
+            
+                <a href="gw-15-heartbeat.html">
+            
+                    
+                    在线状态管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="gw-16-control.html">
+            
+                <a href="gw-16-control.html">
+            
+                    
+                    设备控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="gw-17-rev.html">
+            
+                <a href="gw-17-rev.html">
+            
+                    
+                    指令下发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="gw-18-send.html">
+            
+                <a href="gw-18-send.html">
+            
+                    
+                    状态上报
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="z-gw-01-introduct.html">
+            
+                <a href="z-gw-01-introduct.html">
+            
+                    
+                    涂鸦Zigbee网关功能快速集成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="z-gw-SDK_directory.html">
+            
+                <a href="z-gw-SDK_directory.html">
+            
+                    
+                    SDK目录结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="z-gw-func_api.html">
+            
+                <a href="z-gw-func_api.html">
+            
+                    
+                    函数接口说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="z-gw-func_process.html">
+            
+                <a href="z-gw-func_process.html">
+            
+                    
+                    函数调用流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="z-gw-one_click.html">
+            
+                <a href="z-gw-one_click.html">
+            
+                    
+                    一键配网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="z-gw-faq.html">
+            
+                <a href="z-gw-faq.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="robot_introduction.html">
+            
+                <a href="robot_introduction.html">
+            
+                    
+                    涂鸦扫地机器人
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="gyro_introduction.html">
+            
+                <a href="gyro_introduction.html">
+            
+                    
+                    陀螺仪扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="gyro_robot_access_process.html">
+            
+                <a href="gyro_robot_access_process.html">
+            
+                    
+                    对接说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.1.2" data-path="gyro_robot_mcu_develop.html">
+            
+                <a href="gyro_robot_mcu_develop.html">
+            
+                    
+                    MCU开发说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="gyro_robot_demo.html">
+            
+                <a href="gyro_robot_demo.html">
+            
+                    
+                    演示demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="laser_introduction.html">
+            
+                <a href="laser_introduction.html">
+            
+                    
+                    激光扫地机
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="laser_robot_access_process.html">
+            
+                <a href="laser_robot_access_process.html">
+            
+                    
+                    对接说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="laser_robot_develop.html">
+            
+                <a href="laser_robot_develop.html">
+            
+                    
+                    开发说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="laser_robot_demo.html">
+            
+                <a href="laser_robot_demo.html">
+            
+                    
+                    演示demo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ai_scene.html">
+            
+                <a href="ai_scene.html">
+            
+                    
+                    场景与联动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="log_manage.html">
+            
+                <a href="log_manage.html">
+            
+                    
+                    日志管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="public_api.html">
+            
+                <a href="public_api.html">
+            
+                    
+                    其他接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="error-code.html">
+            
+                <a href="error-code.html">
+            
+                    
+                    设备端错误码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="FAQ.html">
+            
+                <a href="FAQ.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MCU开发说明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><ul>
+<li><div><a href="#1-&#x524D;&#x671F;&#x51C6;&#x5907;">1 &#x524D;&#x671F;&#x51C6;&#x5907;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#11-&#x6CE8;&#x518C;&#x8D26;&#x53F7;">1.1 &#x6CE8;&#x518C;&#x8D26;&#x53F7;</a><i></i></div></li>
+<li><div><a href="#12-&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;">1.2 &#x4EA7;&#x54C1;&#x5B9A;&#x4E49;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#2-&#x786C;&#x4EF6;&#x5BF9;&#x63A5;">2 &#x786C;&#x4EF6;&#x5BF9;&#x63A5;</a><i></i></div></li>
+<li><div><a href="#3-&#x901A;&#x8BAF;&#x534F;&#x8BAE;">3 &#x901A;&#x8BAF;&#x534F;&#x8BAE;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#31-&#x529F;&#x80FD;dp">3.1 &#x529F;&#x80FD;DP</a><i></i></div></li>
+<li><div><a href="#33-&#x5730;&#x56FE;&#x4F20;&#x8F93;">3.3 &#x5730;&#x56FE;&#x4F20;&#x8F93;</a><i></i></div></li>
+<li><div><a href="#34-&#x76F8;&#x5173;&#x9644;&#x4EF6;">3.4 &#x76F8;&#x5173;&#x9644;&#x4EF6;</a><i></i></div></li>
+<li><div><a href="#4--mcu&#x5F00;&#x53D1;">4  MCU&#x5F00;&#x53D1;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#41-&#x5F00;&#x53D1;&#x65B9;&#x5F0F;">4.1 &#x5F00;&#x53D1;&#x65B9;&#x5F0F;</a><i></i></div></li>
+<li><div><a href="#42-&#x901A;&#x7528;&#x529F;&#x80FD;">4.2 &#x901A;&#x7528;&#x529F;&#x80FD;</a><i></i></div></li>
+<li><div><a href="#43-&#x5173;&#x952E;&#x4EA4;&#x4E92;">4.3 &#x5173;&#x952E;&#x4EA4;&#x4E92;</a><i></i></div></li>
+<li><div><a href="#44-&#x53C2;&#x8003;&#x6E90;&#x7801;">4.4 &#x53C2;&#x8003;&#x6E90;&#x7801;</a><i></i></div></li>
+</ul></li>
+</ul></li>
+<li><div><a href="#5-&#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;">5 &#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;</a><i></i></div></li>
+<li><div><a href="#6-&#x5176;&#x4ED6;">6 &#x5176;&#x4ED6;</a><i></i></div></li>
+</ul>
+</div>
+
+<h1 id="&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;mcu&#x5F00;&#x53D1;&#x8BF4;&#x660E;"><a name="&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;mcu&#x5F00;&#x53D1;&#x8BF4;&#x660E;" class="plugin-anchor" href="#&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;mcu&#x5F00;&#x53D1;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;MCU&#x5F00;&#x53D1;&#x8BF4;&#x660E;</h1>
+<h1 id="1-&#x524D;&#x671F;&#x51C6;&#x5907;"><a name="1-&#x524D;&#x671F;&#x51C6;&#x5907;" class="plugin-anchor" href="#1-&#x524D;&#x671F;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>1 &#x524D;&#x671F;&#x51C6;&#x5907;</h1>
+<h2 id="11-&#x6CE8;&#x518C;&#x8D26;&#x53F7;"><a name="11-&#x6CE8;&#x518C;&#x8D26;&#x53F7;" class="plugin-anchor" href="#11-&#x6CE8;&#x518C;&#x8D26;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x6CE8;&#x518C;&#x8D26;&#x53F7;</h2>
+<p>   &#x5728;&#x6D82;&#x9E26;IOT&#x5E73;&#x53F0;&#xFF0C;&#x6CE8;&#x518C;&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;&#xFF0C;&#x5F00;&#x542F;&#x4EA7;&#x54C1;&#x667A;&#x80FD;&#x5316;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E3A;&#x4E86;&#x4F7F;&#x7528;&#x8FD0;&#x8425;&#x76F8;&#x5173;&#x529F;&#x80FD;&#xFF0C;&#x8BF7;&#x5F00;&#x901A;&#x4F01;&#x4E1A;&#x7248;&#x6743;&#x9650;&#x3002;
+   IOT&#x5E73;&#x53F0;&#x94FE;&#x63A5;&#xFF1A;<a href="https://iot.tuya.com&#x3002;" target="_blank">https://iot.tuya.com&#x3002;</a></p>
+<h2 id="12-&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;"><a name="12-&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;" class="plugin-anchor" href="#12-&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x4EA7;&#x54C1;&#x5B9A;&#x4E49;</h2>
+<p>1&#x3001;&#x5728;&#x6D82;&#x9E26;IOT&#x5E73;&#x53F0;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#xFF0C;&#x9009;&#x62E9;&#x3010;&#x5C0F;&#x5BB6;&#x7535;&#x3011;-&#x3010;&#x626B;&#x5730;&#x673A;&#x5668;&#x4EBA;&#x3011;&#xFF0C;&#x70B9;&#x51FB;&#x201C;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#x201D;&#x5373;&#x53EF;&#x5F00;&#x59CB;&#x521B;&#x5EFA;&#x4EA7;&#x54C1;&#x3002; </p>
+<center class="half">
+    <img src="image/1.2-1.png" width="50%/"> 
+    <img src="image/1.2-2.png" width="33%/">
+</center>
+
+<p>2&#x3001;&#x53EF;&#x6839;&#x636E;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#xFF0C;&#x57FA;&#x4E8E;&#x516C;&#x7248;&#x5B9A;&#x4E49;&#x7684;DP&#x5E93;&#xFF0C;&#x81EA;&#x7531;&#x9009;&#x62E9;DP&#x6216;&#x7F16;&#x8F91;DP&#x5185;&#x5BB9;&#x3002;</p>
+<center class="half">
+    <img src="image/1.2-3.png" width="45%/"> 
+    <img src="image/1.2-4.png" width="40%/">
+</center>
+
+<p>3&#x3001;&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;&#x540E;&#xFF0C;&#x9009;&#x62E9;&#x9002;&#x914D;&#x7684;&#x4E91;&#x6A21;&#x7EC4;&#xFF0C;&#x5E76;&#x5728;IOT&#x5E73;&#x53F0;&#x91C7;&#x8D2D;&#x6837;&#x7247;&#x3002;</p>
+<center class="half">
+    <img src="image/1.2-5.png" width="50%/"> 
+</center>
+
+<p>4&#x3001;&#x5B8C;&#x6210;&#x76F8;&#x5173;&#x5B9A;&#x4E49;&#x540E;&#xFF0C;IOT&#x5E73;&#x53F0;&#x4F1A;&#x6839;&#x636E;&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;&#x548C;&#x4E91;&#x6A21;&#x7EC4;&#x578B;&#x53F7;&#xFF0C;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x6570;&#x636E;&#x534F;&#x8BAE;&#xFF0C;&#x8BF7;&#x4E0B;&#x8F7D;&#x5E76;&#x4FDD;&#x5B58;&#x3002;</p>
+<center class="half">
+    <img src="image/1.2-6.png" width="50%/"> 
+</center>
+
+<p>&#x8BE6;&#x7EC6;&#x64CD;&#x4F5C;&#x8BF7;&#x53C2;&#x8003;&#xFF1A;</p>
+<h1 id="2-&#x786C;&#x4EF6;&#x5BF9;&#x63A5;"><a name="2-&#x786C;&#x4EF6;&#x5BF9;&#x63A5;" class="plugin-anchor" href="#2-&#x786C;&#x4EF6;&#x5BF9;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>2 &#x786C;&#x4EF6;&#x5BF9;&#x63A5;</h1>
+<p>&#x5728;&#x786C;&#x4EF6;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x7ED3;&#x5408;MCU&#x4E3B;&#x63A7;&#x7535;&#x8DEF;&#x60C5;&#x51B5;&#xFF0C;&#x5C06;&#x4E91;&#x6A21;&#x7EC4;&#x63A5;&#x5165;&#x4E3B;&#x63A7;&#x7535;&#x8DEF;&#xFF0C;&#x5B9E;&#x73B0;&#x6A21;&#x7EC4;&#x4E0E;&#x4E3B;&#x63A7;&#x7684;&#x7269;&#x7406;&#x8FDE;&#x63A5;&#xFF0C;&#x5177;&#x4F53;&#x8FC7;&#x7A0B;&#x7531;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x884C;&#x5B8C;&#x6210;&#x3002;</p>
+<p><strong>&#x3010;&#x76F8;&#x5173;&#x8BF4;&#x660E;&#x8BF7;&#x53C2;&#x8003;&#x3011;</strong> <a href="https://docs.tuya.com/zh/iot/device-development/module/wifi-module/mcu-typical-reference-of-wifi-module/wifie3smodulemcu" target="_blank">https://docs.tuya.com/zh/iot/device-development/module/wifi-module/mcu-typical-reference-of-wifi-module/wifie3smodulemcu</a></p>
+<h1 id="3-&#x901A;&#x8BAF;&#x534F;&#x8BAE;"><a name="3-&#x901A;&#x8BAF;&#x534F;&#x8BAE;" class="plugin-anchor" href="#3-&#x901A;&#x8BAF;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>3 &#x901A;&#x8BAF;&#x534F;&#x8BAE;</h1>
+<p>&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;&#x8BBE;&#x5907;&#x7AEF;&#x4E0E;&#x4E91;&#x7AEF;&#x53CA;APP&#x7684;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x5206;&#x4E3A;&#x4E24;&#x90E8;&#x5206;&#x534F;&#x8BAE;&#xFF0C;&#x4E00;&#x662F;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x534F;&#x8BAE;&#xFF08;DP&#x534F;&#x8BAE;&#xFF09;&#xFF0C;&#x4E8C;&#x662F;&#x5730;&#x56FE;&#x6570;&#x636E;&#x534F;&#x8BAE;&#x3002;</p>
+<p>&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x534F;&#x8BAE;&#xFF0C;&#x5728;&#x4EA7;&#x54C1;&#x5B9A;&#x4E49;&#x65F6;&#x751F;&#x6210;&#xFF0C;&#x6DB5;&#x76D6;&#x5404;&#x4EA7;&#x54C1;&#x529F;&#x80FD;&#x70B9;&#x7684;&#x4E0A;&#x62A5;&#x548C;&#x4E0B;&#x53D1;&#x65B9;&#x5F0F;&#x3002;&#xFF08;&#x89C1;1.2&#x8282;&#xFF09;</p>
+<p>&#x6570;&#x636E;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF0C;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x6E05;&#x626B;&#x5730;&#x56FE;&#x7684;&#x663E;&#x793A;&#x65B9;&#x5F0F;&#x3001;&#x5730;&#x56FE;&#x6570;&#x636E;&#x70B9;&#x683C;&#x5F0F;&#x3002;</p>
+<h2 id="31-&#x529F;&#x80FD;dp"><a name="31-&#x529F;&#x80FD;dp" class="plugin-anchor" href="#31-&#x529F;&#x80FD;dp"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 &#x529F;&#x80FD;DP</h2>
+<p>&#x4EE5;&#x60EF;&#x5BFC;&#x578B;&#x626B;&#x5730;&#x673A;&#x901A;&#x7528;&#x7248;&#x4EA7;&#x54C1;DP&#x5B9A;&#x4E49;&#x4E3A;&#x4F8B;&#xFF0C;&#x5176;&#x4EA7;&#x54C1;DP&#x5B9A;&#x4E49;&#x5982;&#x4E0B;:</p>
+<center class="half">
+    <img src="image/3.1-1.png" width="60%/"> 
+</center>
+
+
+<p>&#x6839;&#x636E;&#x529F;&#x80FD;DP&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x5206;&#x4E3A;&#x63A7;&#x5236;&#x7C7B;&#x3001;&#x72B6;&#x6001;&#x7C7B;&#x3001;&#x4F20;&#x8F93;&#x7C7B;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</p>
+<p>&#x63A7;&#x5236;&#x7C7B;DP&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;APP&#x548C;&#x673A;&#x5668;&#x95F4;&#x7684;&#x63A7;&#x5236;&#x4EA4;&#x4E92;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x901A;&#x5E38;&#x5E03;&#x5C14;&#x578B;&#x3001;&#x679A;&#x4E3E;&#x578B;&#xFF0C;&#x5982;&#x6E05;&#x626B;&#x5F00;&#x5173;&#x3001;&#x6E05;&#x626B;&#x6A21;&#x5F0F;&#xFF1B;</p>
+<p>&#x72B6;&#x6001;&#x7C7B;DP&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x673A;&#x5668;&#x7AEF;&#x72B6;&#x6001;&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x901A;&#x5E38;&#x662F;&#x6570;&#x503C;&#x578B;&#x3001;&#x5B57;&#x7B26;&#x578B;&#xFF0C;&#x5982;&#x6E05;&#x626B;&#x65F6;&#x95F4;&#x3001;&#x5269;&#x4F59;&#x7535;&#x91CF;&#xFF1B;</p>
+<p>&#x4F20;&#x8F93;&#x7C7B;DP&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;APP&#x548C;&#x673A;&#x5668;&#x95F4;&#x7684;&#x901A;&#x8BAF;&#x4EA4;&#x4E92;&#xFF0C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x901A;&#x5E38;&#x662F;&#x5B57;&#x7B26;&#x578B;&#x3001;RAW&#x578B;&#xFF0C;&#x5982;&#x6E05;&#x626B;&#x8BB0;&#x5F55;&#x3001;&#x5730;&#x56FE;&#x53C2;&#x6570;&#xFF1B;</p>
+<h2 id="33-&#x5730;&#x56FE;&#x4F20;&#x8F93;"><a name="33-&#x5730;&#x56FE;&#x4F20;&#x8F93;" class="plugin-anchor" href="#33-&#x5730;&#x56FE;&#x4F20;&#x8F93;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3 &#x5730;&#x56FE;&#x4F20;&#x8F93;</h2>
+<p>&#x5730;&#x56FE;&#x6570;&#x636E;&#x534F;&#x8BAE;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x5730;&#x56FE;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x3001;&#x5730;&#x56FE;&#x6570;&#x636E;&#x5305;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5177;&#x4F53;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><strong>1&#x3001;&#x5730;&#x56FE;&#x53C2;&#x6570;&#x914D;&#x7F6E;</strong></p>
+<p>&#x673A;&#x5668;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x673A;&#x5668;&#x5411;&#x4E91;&#x7AEF;&#x4E0A;&#x62A5;&#x5730;&#x56FE;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x544A;&#x77E5;APP&#xFF0C;&#x5F53;&#x524D;&#x5730;&#x56FE;&#x7684;&#x957F;&#x5BBD;&#x3001;&#x4EE5;&#x53CA;&#x5750;&#x6807;&#x539F;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x5730;&#x56FE;&#x53C2;&#x6570;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c">  <span class="token comment">// &#x5730;&#x56FE;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5B9A;&#x4E49;</span>
+  <span class="token keyword">typedef</span> <span class="token keyword">struct</span>
+  <span class="token punctuation">{</span>
+      uint8_t   origin<span class="token punctuation">;</span> <span class="token comment">// &#x5730;&#x56FE;&#x539F;&#x70B9;&#x4F4D;&#x7F6E;&#xFF0C;0-&#x5DE6;&#x4E0A;&#x89D2;  1-&#x5DE6;&#x4E0B;&#x89D2;</span>
+      uint8_t   width<span class="token punctuation">;</span>  <span class="token comment">// &#x5730;&#x56FE;&#x5BBD;&#x5EA6;&#xFF0C;&#x6700;&#x5927;255</span>
+      uint8_t   hight<span class="token punctuation">;</span>  <span class="token comment">// &#x5730;&#x56FE;&#x9AD8;&#x5EA6;&#xFF0C;&#x6700;&#x5927;255      </span>
+  <span class="token punctuation">}</span>ST_CONFIG<span class="token punctuation">;</span>
+</code></pre>
+<p><strong>2&#x3001;&#x5730;&#x56FE;&#x6570;&#x636E;&#x5305;&#x683C;&#x5F0F;</strong></p>
+<p>&#x673A;&#x5668;&#x542F;&#x52A8;&#x6E05;&#x626B;&#x65F6;&#xFF0C;&#x673A;&#x5668;&#x5411;&#x4E91;&#x7AEF;&#x4E0A;&#x62A5;&#x5730;&#x56FE;&#x6570;&#x636E;&#x5305;&#xFF0C;APP&#x5728;&#x6536;&#x5230;&#x5730;&#x56FE;&#x6570;&#x636E;&#x540E;&#xFF0C;&#x66F4;&#x65B0;&#x5F53;&#x524D;&#x5730;&#x56FE;&#xFF0C;&#x5448;&#x73B0;&#x5B8C;&#x6574;&#x7684;&#x6E05;&#x626B;&#x5730;&#x56FE;&#x753B;&#x9762;&#x3002;</p>
+<p>&#x5730;&#x56FE;&#x6570;&#x636E;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre class="language-"><code class="lang-c"><span class="token comment">// &#x5730;&#x56FE;&#x5750;&#x6807;&#x70B9;&#x5B9A;&#x4E49;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span>
+<span class="token punctuation">{</span>
+    uint8_t   x<span class="token punctuation">;</span>
+    uint8_t   y<span class="token punctuation">;</span>
+    uint8_t   type<span class="token punctuation">;</span>
+<span class="token punctuation">}</span> ST_POT<span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5750;&#x6807;&#x70B9;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;</span>
+<span class="token keyword">enum</span> <span class="token class-name">enum_point_type</span>
+<span class="token punctuation">{</span>
+    point_type_current   <span class="token operator">=</span> <span class="token number">0x00</span><span class="token punctuation">,</span>  <span class="token comment">// &#x5F53;&#x524D;&#x70B9;</span>
+    point_type_barrier   <span class="token operator">=</span> <span class="token number">0x01</span><span class="token punctuation">,</span>  <span class="token comment">// &#x969C;&#x788D;&#x70B9;</span>
+    point_type_cleaned   <span class="token operator">=</span> <span class="token number">0x02</span><span class="token punctuation">,</span>  <span class="token comment">// &#x5DF2;&#x6E05;&#x626B;&#x70B9;</span>
+    point_type_charge    <span class="token operator">=</span> <span class="token number">0x03</span>&#xFF0C; <span class="token comment">// &#x5145;&#x7535;&#x6869;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="34-&#x76F8;&#x5173;&#x9644;&#x4EF6;"><a name="34-&#x76F8;&#x5173;&#x9644;&#x4EF6;" class="plugin-anchor" href="#34-&#x76F8;&#x5173;&#x9644;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4 &#x76F8;&#x5173;&#x9644;&#x4EF6;</h2>
+<p>1&#x3001;&#x516C;&#x7248;&#x4EA7;&#x54C1;&#x6807;&#x51C6;DP&#x5B9A;&#x4E49;&#x53CA;&#x4EA4;&#x4E92;&#x53C2;&#x8003;&#xFF1A;DP&#x5B9A;&#x4E49;&#x53CA;&#x4EA4;&#x4E92;V1.0.pdf</p>
+<p>2&#x3001;&#x516C;&#x7248;&#x4EA7;&#x54C1;&#x6807;&#x51C6;&#x901A;&#x8BAF;&#x534F;&#x8BAE;&#xFF1A;&#x901A;&#x4FE1;&#x534F;&#x8BAE;V1.4.pdf</p>
+<h2 id="4--mcu&#x5F00;&#x53D1;"><a name="4--mcu&#x5F00;&#x53D1;" class="plugin-anchor" href="#4--mcu&#x5F00;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>4  MCU&#x5F00;&#x53D1;</h2>
+<h3 id="41-&#x5F00;&#x53D1;&#x65B9;&#x5F0F;"><a name="41-&#x5F00;&#x53D1;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#41-&#x5F00;&#x53D1;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 &#x5F00;&#x53D1;&#x65B9;&#x5F0F;</h3>
+<p>&#x673A;&#x5668;&#x4E3B;&#x63A7;&#x4E0E;&#x4E91;&#x6A21;&#x7EC4;&#x901A;&#x8FC7;&#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x901A;&#x8BAF;&#xFF0C;MCU&#x7AEF;&#x4EA4;&#x4E92;&#x90E8;&#x5206;&#x7684;&#x5F00;&#x53D1;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<p>&#x4E32;&#x53E3;&#x6307;&#x4EE4;&#xFF1A;MCU&#x4E0E;&#x6A21;&#x7EC4;&#x901A;&#x8FC7;&#x6307;&#x4EE4;&#x7801;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x4F18;&#x70B9;&#xFF1A;&#x4EE3;&#x7801;&#x91CF;&#x5C11;&#xFF0C;&#x4E0D;&#x5360;&#x7528;MCU&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x63A5;&#x53E3;&#x79FB;&#x690D;&#xFF1A;MCU&#x8C03;&#x7528;&#x6A21;&#x7EC4;&#x7684;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x4F18;&#x70B9;&#xFF1A;&#x63A5;&#x53E3;&#x4E30;&#x5BCC;&#xFF0C;&#x5F00;&#x53D1;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x8BF7;&#x53C2;&#x8003;&#xFF1A;</p>
+<p>&#x3010;&#x4E32;&#x53E3;&#x534F;&#x8BAE;&#x3011;<a href="https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/tuya-cloud-universal-serial-port-access-protocol" target="_blank">https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/tuya-cloud-universal-serial-port-access-protocol</a></p>
+<p>&#x3010;&#x63A5;&#x53E3;&#x79FB;&#x690D;&#x3011;&#xFF1A;<a href="https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant" target="_blank">https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant</a></p>
+<h3 id="42-&#x901A;&#x7528;&#x529F;&#x80FD;"><a name="42-&#x901A;&#x7528;&#x529F;&#x80FD;" class="plugin-anchor" href="#42-&#x901A;&#x7528;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 &#x901A;&#x7528;&#x529F;&#x80FD;</h3>
+<p><strong>1&#x3001;&#x914D;&#x7F51;</strong></p>
+<p>&#x3010;&#x914D;&#x7F51;&#x529F;&#x80FD;&#x53CA;&#x6307;&#x793A;&#x706F;&#x51FD;&#x6570;&#x5B8C;&#x5584;&#x3011; <a href="https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant" target="_blank">https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant</a> </p>
+<p><strong>2&#x3001;OTA</strong></p>
+<p>&#x3010;&#x786E;&#x8BA4; MCU &#x662F;&#x5426;&#x9700;&#x8981;&#x652F;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x3011; <a href="https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant" target="_blank">https://docs.tuya.com/zh/iot/device-development/access-mode/mcu-solution-wifi/wifi-general-solution/sdk-transplant</a> </p>
+<h3 id="43-&#x5173;&#x952E;&#x4EA4;&#x4E92;"><a name="43-&#x5173;&#x952E;&#x4EA4;&#x4E92;" class="plugin-anchor" href="#43-&#x5173;&#x952E;&#x4EA4;&#x4E92;"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 &#x5173;&#x952E;&#x4EA4;&#x4E92;</h3>
+<p><strong>1&#x3001;DP&#x6570;&#x636E;&#x4EA4;&#x4E92;</strong></p>
+<p>1&#xFF09;&#x673A;&#x5668;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x4E0A;&#x62A5;&#x521D;&#x59CB;&#x503C;&#x5230;&#x4E91;&#x7AEF;&#xFF1B;</p>
+<p>2&#xFF09;&#x624B;&#x52A8;&#x542F;&#x52A8;&#x673A;&#x5668;&#x65F6;&#xFF0C;&#x4E0A;&#x62A5;&#x76F8;&#x5E94;&#x7684;&#x63A7;&#x5236;&#x5F00;&#x5173;&#x3001;&#x72B6;&#x6001;&#x6570;&#x503C;&#x5230;&#x4E91;&#x7AEF;&#xFF1B;</p>
+<p>3&#xFF09;&#x6E05;&#x626B;&#x5F00;&#x5173;&#x3001;&#x6E05;&#x626B;&#x6A21;&#x5F0F;&#x7B49;&#x63A7;&#x5236;&#x7C7B;DP&#xFF0C;&#x673A;&#x5668;&#x5728;&#x63A5;&#x6536;&#x5230;APP&#x7684;&#x6307;&#x4EE4;&#x5E76;&#x6210;&#x529F;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x4E0A;&#x62A5;&#x539F;&#x59CB;&#x503C;&#x5230;&#x4E91;&#x7AEF;&#xFF1B;</p>
+<p><strong>2&#x3001;&#x5730;&#x56FE;&#x914D;&#x7F6E;&#x4E0A;&#x62A5;</strong></p>
+<pre class="language-"><code class="lang-c"><span class="token comment">/*****************************************************************
+ * @Function: app_panel_init
+ * @Description: &#x914D;&#x7F6E;&#x6D82;&#x9E26;&#x667A;&#x80FD;APP&#x9762;&#x677F;&#x663E;&#x793A;&#x7684;&#x5730;&#x56FE;&#x5C3A;&#x5BF8;&#x548C;&#x539F;&#x70B9;&#x4F4D;&#x7F6E;            
+ * @Param: origin, &#x5730;&#x56FE;&#x539F;&#x70B9;&#x4F4D;&#x7F6E;&#xFF0C;0-&#x5DE6;&#x4E0A;&#x89D2;  1-&#x53F3;&#x4E0A;&#x89D2;
+ * @Param: map_size, &#x76EE;&#x524D;&#x6700;&#x5927;&#x652F;&#x6301;&#x663E;&#x793A;255*255&#x4E2A;&#x5750;&#x6807;&#x70B9;
+ * @Return: void
+ *****************************************************************/</span>
+<span class="token keyword">void</span> <span class="token function">app_panel_init</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span> origin<span class="token punctuation">,</span><span class="token keyword">unsigned</span> <span class="token keyword">short</span> map_size<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">char</span> buffer<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> origin<span class="token punctuation">;</span>
+    buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> map_size <span class="token operator">&gt;&gt;</span> <span class="token number">8</span><span class="token punctuation">;</span>
+    buffer<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> map_size <span class="token operator">&amp;</span> <span class="token number">0xFF</span><span class="token punctuation">;</span>
+    <span class="token function">mcu_dp_sync_raw_update</span><span class="token punctuation">(</span>DPID_MAP_CONFIG<span class="token punctuation">,</span>buffer<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//RAW&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;;</span>
+    <span class="token function">mcu_dp_raw_update</span><span class="token punctuation">(</span>DPID_MAP_CONFIG<span class="token punctuation">,</span>buffer<span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>buffer<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//RAW&#x578B;&#x6570;&#x636E;&#x4E0A;&#x62A5;;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>3&#x3001;&#x5730;&#x56FE;&#x6570;&#x636E;&#x4E0A;&#x62A5;</strong></p>
+<pre class="language-"><code class="lang-c"><span class="token comment">/*****************************************************************************
+&#x51FD;&#x6570;&#x540D;&#x79F0; : stream_file_trans
+&#x529F;&#x80FD;&#x63CF;&#x8FF0; : &#x6D41;&#x670D;&#x52A1;&#x6587;&#x4EF6;&#x53D1;&#x9001;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x9891;&#x7387;&#x4E0D;&#x5F97;&#xFF1C;500ms&#x6BCF;&#x6B21;
+&#x8F93;&#x5165;&#x53C2;&#x6570; : id:ID&#x53F7;
+          buffer:&#x53D1;&#x9001;&#x5305;&#x7684;&#x5730;&#x5740;
+          buf_len:&#x5750;&#x6807;&#x70B9;&#x4E2A;&#x6570;&#xFF0C; &#x5355;&#x5305;&#x6700;&#x5927;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7;170
+&#x8FD4;&#x56DE;&#x53C2;&#x6570; : &#x65E0;
+*****************************************************************************/</span>
+<span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token function">stream_file_trans</span><span class="token punctuation">(</span>MAP_ID_S id<span class="token punctuation">,</span> GYRO_MAP_S <span class="token operator">*</span>buffer<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">short</span> point_num<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token comment">// #error &quot;&#x8FD9;&#x91CC;&#x4EC5;&#x7ED9;&#x51FA;&#x793A;&#x4F8B;&#xFF0C;&#x8BF7;&#x81EA;&#x884C;&#x5B8C;&#x5584;&#x6D41;&#x670D;&#x52A1;&#x5904;&#x7406;&#x4EE3;&#x7801;,&#x5B8C;&#x6210;&#x540E;&#x8BF7;&#x5220;&#x9664;&#x8BE5;&#x884C;&quot;</span>
+  <span class="token keyword">static</span> <span class="token keyword">unsigned</span> <span class="token keyword">int</span> map_offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> MAP_ID_S last_id <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">unsigned</span> <span class="token keyword">short</span> this_len <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span>stop_update_flag <span class="token operator">==</span> ENABLE<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> SUCCESS<span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span>last_id <span class="token operator">!=</span> id<span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token comment">// &#x5F00;&#x59CB;&#x65B0;&#x7684;&#x6E05;&#x626B;&#xFF0C;map_id&#x66F4;&#x65B0;</span>
+    map_offset <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  this_len <span class="token operator">=</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>GYRO_MAP_S<span class="token punctuation">)</span> <span class="token operator">*</span> point_num<span class="token punctuation">;</span>
+  <span class="token function">stream_trans</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span> map_offset<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span><span class="token punctuation">)</span>buffer<span class="token punctuation">,</span> this_len<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  map_offset <span class="token operator">+=</span> this_len<span class="token punctuation">;</span>
+  last_id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> SUCCESS<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="44-&#x53C2;&#x8003;&#x6E90;&#x7801;"><a name="44-&#x53C2;&#x8003;&#x6E90;&#x7801;" class="plugin-anchor" href="#44-&#x53C2;&#x8003;&#x6E90;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>4.4 &#x53C2;&#x8003;&#x6E90;&#x7801;</h3>
+<p>&#x3010;GitHub&#x3011; <a href="https://github.com/LinusZhao/tuya_gyro_robot_demo/tree/master/mcu_sdk" target="_blank">https://github.com/LinusZhao/tuya_gyro_robot_demo/tree/master/mcu_sdk</a> </p>
+<h1 id="5-&#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;"><a name="5-&#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;" class="plugin-anchor" href="#5-&#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>5 &#x5DE5;&#x7A0B;&#x8C03;&#x8BD5;</h1>
+<p><strong>1&#x3001;&#x529F;&#x80FD;&#x8C03;&#x8BD5;</strong></p>
+<p>&#x673A;&#x5668;MCU&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x7528;APP&#x5BF9;&#x673A;&#x5668;&#x8FDB;&#x884C;&#x914D;&#x7F51;&#xFF0C;&#x5728;APP&#x4E0A;&#x5BF9;&#x626B;&#x5730;&#x673A;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x64CD;&#x4F5C;&#xFF0C;&#x9A8C;&#x8BC1;&#x6307;&#x4EE4;&#x6536;&#x53D1;&#xFF0C;APP&#x663E;&#x793A;&#x3001;&#x673A;&#x5668;&#x6267;&#x884C;&#x7B49;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</p>
+<center class="half">
+    <img src="image/5-1.png" width="50%/"> 
+</center>
+
+<p><strong>2&#x3001;&#x5355;&#x70B9;&#x8C03;&#x8BD5;</strong></p>
+<p>&#x5F53;MCU&#x91C7;&#x7528;&#x5728;&#x6A21;&#x5757;&#x5316;&#x5E76;&#x884C;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x8C03;&#x8BD5;&#x9762;&#x677F;&#x529F;&#x80FD;&#xFF0C;&#x5355;&#x72EC;&#x8C03;&#x8BD5;&#x67D0;&#x4E2A;DP&#x7684;&#x903B;&#x8F91;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;&#xFF08;&#x5BF9;&#x4E8E;&#x5B9A;&#x5236;&#x578B;&#x9879;&#x76EE;&#xFF0C;&#x5728;APP&#x5B9A;&#x5236;&#x5B8C;&#x6210;&#x524D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x8C03;&#x8BD5;&#x9762;&#x677F;&#x8FDB;&#x884C;&#x8F85;&#x52A9;&#x5F00;&#x53D1;&#xFF09;</p>
+<center class="half">
+    <img src="image/5-1.png" width="50%/"> 
+</center>
+
+<p><strong>3&#x3001;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;</strong>
+IOT&#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x65E5;&#x5FD7;&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x626B;&#x5730;&#x673A;MCU&#x4E0E;APP&#x95F4;&#x7684;&#x6570;&#x636E;&#x901A;&#x8BAF;&#x60C5;&#x51B5;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6392;&#x67E5;&#x5404;&#x7AEF;&#x7684;&#x64CD;&#x4F5C;&#x60C5;&#x51B5;&#x3002;</p>
+<center class="half">
+    <img src="image/5-2.png" width="80%/"> 
+</center>
+
+
+
+<h1 id="6-&#x5176;&#x4ED6;"><a name="6-&#x5176;&#x4ED6;" class="plugin-anchor" href="#6-&#x5176;&#x4ED6;"><i class="fa fa-link" aria-hidden="true"></i></a>6 &#x5176;&#x4ED6;</h1>
+<p><strong>1&#x3001;OTA&#x540E;&#x53F0;&#x914D;&#x7F6E;</strong>
+&#x5BF9;&#x4E8E;&#x652F;&#x6301;MCU&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x7684;&#x5382;&#x5BB6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6B64;&#x4E0A;&#x4F20;MCU&#x56FA;&#x4EF6;&#xFF0C;&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x3002;&#x4E0A;&#x4F20;&#x56FA;&#x4EF6;&#x540E;&#xFF0C;&#x5148;&#x8FDB;&#x884C;&#x56FA;&#x4EF6;&#x7684;&#x6D4B;&#x8BD5;&#x9A8C;&#x8BC1;&#xFF0C;&#x901A;&#x8FC7;&#x540E;&#xFF0C;&#x624D;&#x53EF;&#x5BF9;&#x5916;&#x53D1;&#x5E03;&#x56FA;&#x4EF6;&#xFF0C;&#x786E;&#x4FDD;&#x4E0D;&#x5F71;&#x54CD;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x3002;</p>
+<center class="half">
+    <img src="image/6-1.png" width="45%/"> 
+    <img src="image/6-2.png" width="52%/">
+</center>
+
+
+
+<p><strong>2&#x3001;&#x4E09;&#x65B9;&#x8BED;&#x97F3;&#x5F00;&#x901A;</strong>
+&#x626B;&#x5730;&#x673A;&#x53EF;&#x4EE5;&#x63A5;&#x6536;Alexa&#x7B49;&#x4E09;&#x65B9;&#x8BED;&#x97F3;&#x7684;&#x6307;&#x4EE4;&#xFF0C;&#x97F3;&#x7BB1;&#x4E0B;&#x53D1;&#x7684;&#x6307;&#x4EE4;&#x7801;&#xFF0C;&#x4E0E;DP&#x5B9A;&#x4E49;&#x7684;&#x6307;&#x4EE4;&#x4E00;&#x81F4;&#xFF0C;&#x5E38;&#x7528;&#x7684;&#x63A7;&#x5236;&#x529F;&#x80FD;&#x6709;&#x5F00;&#x542F;&#x6E05;&#x626B;&#x3001;&#x7ED3;&#x675F;&#x6E05;&#x626B;&#x3001;&#x56DE;&#x5145;&#x3001;&#x5BFB;&#x627E;&#x673A;&#x5668;&#x7B49;&#x3002;&#x4E0D;&#x540C;&#x97F3;&#x7BB1;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x7A0D;&#x6709;&#x5DEE;&#x5F02;&#x3002;</p>
+<p>&#x4E09;&#x65B9;&#x8BED;&#x97F3;&#x5F00;&#x901A;&#x8BF7;&#x53C2;&#x8003;&#xFF1A; </p>
+<footer class="footer"><div class="footer__container--normal" alt=""><div class="footer__description--normal"><p class="paragraph footer__author--normal" style="color: #000 !important;"><a href="https://github.com/TuyaInc" target="_blank">Tuya Inc</a><sup class="super">&#xAE;</sup></p><p class="paragraph footer__quote--normal" style="color: #000 !important;"><a href="https://www.tuya.com" target="_blank">www.tuya.com</a></p><div class="footer__main--normal"><p class="paragraph footer__main__paragraph--normal copyright" style="color: #666 !important;">Copyright &#xA9; Tuya Inc all right reserved</p><p class="paragraph footer__main__paragraph--normal footer__modifyTime--normal" style="color: #666 !important;"><span style="color: #666 !important;">Modified at</span>
+2019-12-02 10:59:51
+</p></div></div></div><div class="box__issues">
+
+</div></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gyro_robot_access_process.html" class="navigation navigation-prev " aria-label="Previous page: 对接说明">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="gyro_robot_demo.html" class="navigation navigation-next " aria-label="Next page: 演示demo">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MCU开发说明","level":"1.5.1.2","depth":3,"next":{"title":"演示demo","level":"1.5.1.3","depth":3,"path":"resource/gyro_robot_demo.md","ref":"./resource/gyro_robot_demo.md","articles":[]},"previous":{"title":"对接说明","level":"1.5.1.1","depth":3,"path":"resource/gyro_robot_access_process.md","ref":"./resource/gyro_robot_access_process.md","articles":[]},"dir":"ltr"},"config":{"plugins":["js-sequence-diagram-full@>=0.3.1","prism","-highlight","anchors","plantuml","page-copyright","flexible-alerts","pageview-count","popup","chapter-fold","splitter","page-treeview","advanced-emoji","todo","back-to-top-button","copy-code-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"page-treeview":{"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-okaidia.css"],"lang":{"java":"java"},"ignore":["sequence"]},"livereload":{},"todo":{},"splitter":{},"search":{},"page-copyright":{"wisdom":"<a href='https://www.tuya.com' target='_blank'>www.tuya.com</a>","noPowered":true,"copyright":"Copyright &#169; Tuya Inc","styles (normal, symmetrical)":"normal","style":"normal","isShowQRCode":false,"timeColor":"#666","utcOffset":"8","format":"YYYY-MM-dd hh:mm:ss","signature":"<a href='https://github.com/TuyaInc' target='_blank'>Tuya Inc</a>","baseUri":"https://github.com/skyFi","copyrightColor":"#666","description":"Modified at"},"plantuml":{},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"js-sequence-diagram-full":{},"fontsettings":{"theme":"white","family":"sans","size":2},"back-to-top-button":{},"pageview-count":{},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"resource/gyro_robot_mcu_develop.md","mtime":"2019-12-02T02:59:51.139Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T03:22:24.101Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/sequence-diagram-min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-js-sequence-diagram-full/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-plantuml/test.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
